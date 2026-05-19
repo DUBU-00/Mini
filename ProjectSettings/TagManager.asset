@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Attack
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Monster
+  - Ground
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 108425519
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 3266065445
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2071747181
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 180009085
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 3561469627
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 3621907377
+    locked: 0
+  - name: New Layer 7
+    uniqueID: 1061210415
+    locked: 0
+  - name: New Layer 8
+    uniqueID: 3793948217
+    locked: 0
+  - name: New Layer 9
+    uniqueID: 3220010965
+    locked: 0
+  - name: New Layer 10
+    uniqueID: 592476921
+    locked: 0
+  - name: New Layer 11
+    uniqueID: 1186534877
+    locked: 0
+  - name: New Layer 12
+    uniqueID: 851128755
+    locked: 0
+  m_RenderingLayers:
+  - Default
