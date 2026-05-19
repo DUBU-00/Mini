@@ -14,6 +14,16 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private LayerMask monsterLayer;
+    [SerializeField] private float dashPower = 10f;
+    [SerializeField] private float dashTime = 0.2f;
+    [SerializeField] private float dashCooldown = 1f;
+    [SerializeField] private Transform dustpoint;
+    [SerializeField] private GameObject dashdustPrefab;
+    [SerializeField] private float dustOffsetX = 0.5f;
+
+    private bool _isDashing;
+    private bool canDash = true;
+    private bool _isFacingRight = true;
 
     private Animator _animator;
     private Rigidbody2D _rigidbody;
@@ -22,6 +32,7 @@ public class Player : MonoBehaviour
     private bool _isGrounded = true;
 
     private float h;
+    private float moveInput;
 
     void Start()
     {
@@ -32,7 +43,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         h = Input.GetAxisRaw("Horizontal");
-
+        moveInput = Input.GetAxisRaw("Horizontal");
         Jump();
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
@@ -42,14 +53,33 @@ public class Player : MonoBehaviour
         {
             _animator.SetTrigger("isAttack2");
         }
+        if (moveInput > 0)
+        {
+            _isFacingRight = true;
+        }
+        else if (moveInput < 0)
+        {
+            _isFacingRight = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+        attackPoint.localPosition = new Vector3(_renderer.flipX ? -Mathf.Abs(attackPoint.localPosition.x) : Mathf.Abs(attackPoint.localPosition.x),
+        attackPoint.localPosition.y,0);
         Animation();
     }
     void FixedUpdate()
     {
+        if (_isDashing)
+            return;
         Move();
     }
     void Move()
     {
+        if (_isDashing)
+            return;
+
         Vector2 linearVelocity = _rigidbody.linearVelocity;
         linearVelocity.x = h * moveSpeed;
         _rigidbody.linearVelocity = linearVelocity;
@@ -117,6 +147,50 @@ public class Player : MonoBehaviour
                 monster.TakeDamage(4, attackDir);
             }
         }
+    }
+    IEnumerator Dash()
+    {
+        canDash = false;
+        _isDashing = true;
+        
+        Vector3 dustPos = dustpoint.position;
+        if (_renderer.flipX)
+        {
+            dustPos.x += dustOffsetX;
+        }
+        else
+        {
+            dustPos.x -= dustOffsetX;
+        }
+        GameObject dust = Instantiate(dashdustPrefab,dustPos,Quaternion.identity);
+        Vector3 scale = dust.transform.localScale;
+
+        if (_renderer.flipX)
+        {
+            scale.x = -Mathf.Abs(scale.x);
+        }
+        else
+        {
+            scale.x = Mathf.Abs(scale.x);
+        }
+
+        dust.transform.localScale = scale;
+        _animator.SetTrigger("isDash");
+        float dir;
+        if (_renderer.flipX)
+        {
+            dir = -1f;
+        }
+        else
+        {
+            dir = 1f;
+        }
+        _rigidbody.linearVelocity = new Vector2(dir * dashPower, _rigidbody.linearVelocity.y);
+        
+        yield return new WaitForSeconds(dashTime);
+        _isDashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
