@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 5290358143411629065}
   - component: {fileID: 7375336939347359727}
   - component: {fileID: 5792607650868875926}
-  - component: {fileID: 6121887070477880131}
+  - component: {fileID: 5511676600334001896}
   - component: {fileID: 9006841822494935125}
   - component: {fileID: 1879759566049830379}
   m_Layer: 8
@@ -131,6 +131,7 @@ Transform:
   - {fileID: 6090362135883961054}
   - {fileID: 5325868759147724330}
   - {fileID: 5250025596583557712}
+  - {fileID: 1672386201892673132}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5290358143411629065
@@ -244,7 +245,8 @@ MonoBehaviour:
   dustpoint: {fileID: 5250025596583557712}
   dashdustPrefab: {fileID: 690583089630610549, guid: fbc165dbfea2e0642b85e28c3e318e9d, type: 3}
   dustOffsetX: 0.5
---- !u!114 &6121887070477880131
+  _isFacingRight: 1
+--- !u!114 &5511676600334001896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,12 +255,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7196364842677439029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c026f8ea43ad091438f7dc448762e32c, type: 3}
+  m_Script: {fileID: 11500000, guid: 325683cfdeb33434cbce00b770f85d8b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCast2D
-  fireballSkill: {fileID: 11400000, guid: 2cddab38a0a1d674e85e0d344de23616, type: 2}
-  castPoint: {fileID: 8912966652305945212, guid: 9236004d7d1bf7f4e94057914cac95d1, type: 3}
-  lookDirection: {x: 1, y: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSkill
+  skillPrefab: {fileID: 7106455007135079486, guid: 784066cfc8436184984ce98627d04f78, type: 3}
+  firePoint: {fileID: 2692814679932740603, guid: 6c05462dd5eed2840953b7751f59a327, type: 3}
+  player: {fileID: 5792607650868875926}
 --- !u!50 &9006841822494935125
 Rigidbody2D:
   serializedVersion: 5
@@ -323,3 +325,34 @@ CapsuleCollider2D:
   m_Offset: {x: 0.007375121, y: -0.52363276}
   m_Size: {x: 0.74924636, y: 1.2802539}
   m_Direction: 0
+--- !u!1 &9177073176990353893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1672386201892673132}
+  m_Layer: 8
+  m_Name: SkillPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1672386201892673132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9177073176990353893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1213946761616234437}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

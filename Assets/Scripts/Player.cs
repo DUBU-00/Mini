@@ -20,10 +20,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform dustpoint;
     [SerializeField] private GameObject dashdustPrefab;
     [SerializeField] private float dustOffsetX = 0.5f;
-
     private bool _isDashing;
     private bool canDash = true;
-    private bool _isFacingRight = true;
+    public bool _isFacingRight = true;
 
     private Animator _animator;
     private Rigidbody2D _rigidbody;
@@ -65,9 +64,21 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
-        attackPoint.localPosition = new Vector3(_renderer.flipX ? -Mathf.Abs(attackPoint.localPosition.x) : Mathf.Abs(attackPoint.localPosition.x),
-        attackPoint.localPosition.y,0);
+        Vector3 pos = attackPoint.localPosition;
+
+        if (_renderer.flipX)
+        {
+            pos.x = -Mathf.Abs(pos.x);
+        }
+        else
+        {
+            pos.x = Mathf.Abs(pos.x);
+        }
+
+        attackPoint.localPosition = pos;
+
         Animation();
+
     }
     void FixedUpdate()
     {
