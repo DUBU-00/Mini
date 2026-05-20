@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 521278316}
 --- !u!114 &150382355
 MonoBehaviour:
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1619583922}
 --- !u!114 &181787822
 MonoBehaviour:
@@ -2198,7 +2198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 1170964449}
 --- !u!114 &263225466
 MonoBehaviour:
@@ -9038,7 +9038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 1324710755}
 --- !u!114 &675711330
 MonoBehaviour:
@@ -9270,7 +9270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 1672476271}
 --- !u!114 &676221055
 MonoBehaviour:
@@ -9629,7 +9629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 357944890}
 --- !u!114 &742967378
 MonoBehaviour:
@@ -9968,7 +9968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 2080241867}
 --- !u!114 &749233393
 MonoBehaviour:
@@ -10378,7 +10378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 1813002793}
 --- !u!114 &765727948
 MonoBehaviour:
@@ -11331,7 +11331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1714245698}
 --- !u!114 &867125052
 MonoBehaviour:
@@ -11625,7 +11625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 792547603}
 --- !u!114 &884003492
 MonoBehaviour:
@@ -11742,16 +11742,6 @@ SpriteRenderer:
 --- !u!4 &887290022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1213946761616234437, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-  m_PrefabInstance: {fileID: 7005096361567636217}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &887290025 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7375336939347359727, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-  m_PrefabInstance: {fileID: 7005096361567636217}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &887290026 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5290358143411629065, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
   m_PrefabInstance: {fileID: 7005096361567636217}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &894296165
@@ -11872,7 +11862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 325181094}
 --- !u!114 &894296170
 MonoBehaviour:
@@ -12754,7 +12744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 2099612202}
 --- !u!114 &943580102
 MonoBehaviour:
@@ -13089,7 +13079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 243858994}
 --- !u!114 &954749769
 MonoBehaviour:
@@ -13885,7 +13875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 499373975}
 --- !u!114 &1015749540
 MonoBehaviour:
@@ -14449,7 +14439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 2142410821}
 --- !u!114 &1044358001
 MonoBehaviour:
@@ -14729,6 +14719,11 @@ Canvas:
   m_SortingLayerID: 851128755
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!4 &1046091377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5325868759147724330, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+  m_PrefabInstance: {fileID: 7005096361567636217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063700099
 GameObject:
   m_ObjectHideFlags: 0
@@ -16044,7 +16039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 1980949824}
 --- !u!114 &1195358210
 MonoBehaviour:
@@ -16845,7 +16840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 894928972}
 --- !u!114 &1263568258
 MonoBehaviour:
@@ -17243,7 +17238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 260284658}
 --- !u!114 &1300708079
 MonoBehaviour:
@@ -18029,7 +18024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 132348733}
 --- !u!114 &1362892855
 MonoBehaviour:
@@ -18352,7 +18347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1229305326}
 --- !u!114 &1387342229
 MonoBehaviour:
@@ -19249,7 +19244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1518984052}
 --- !u!114 &1549546775
 MonoBehaviour:
@@ -19481,7 +19476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1071521962}
 --- !u!114 &1557610813
 MonoBehaviour:
@@ -20056,7 +20051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 286587529}
 --- !u!114 &1607922281
 MonoBehaviour:
@@ -21042,7 +21037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 865502206}
 --- !u!114 &1700011502
 MonoBehaviour:
@@ -21442,7 +21437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1179877094}
 --- !u!114 &1782384596
 MonoBehaviour:
@@ -22155,7 +22150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 1193437839}
 --- !u!114 &1850639698
 MonoBehaviour:
@@ -22977,7 +22972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 15
+  maxHp: 40
   hpFill: {fileID: 1387544196}
 --- !u!114 &1909462921
 MonoBehaviour:
@@ -23311,7 +23306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 20
   hpFill: {fileID: 2010538595}
 --- !u!114 &1969773328
 MonoBehaviour:
@@ -24272,7 +24267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 1599014635}
 --- !u!114 &2047085944
 MonoBehaviour:
@@ -25457,7 +25452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 10
+  maxHp: 60
   hpFill: {fileID: 1795896427}
 --- !u!114 &2138736629
 MonoBehaviour:
@@ -25725,54 +25720,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2874375839545115157, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+    - target: {fileID: 1672386201892673132, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 1.47
       objectReference: {fileID: 0}
-    - target: {fileID: 6121887070477880131, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: castPoint
+    - target: {fileID: 1672386201892673132, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511676600334001896, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: player
       value: 
-      objectReference: {fileID: 8912966652305945212, guid: 9236004d7d1bf7f4e94057914cac95d1, type: 3}
-    - target: {fileID: 6121887070477880131, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: fireballSkill
+      objectReference: {fileID: 5792607650868875926, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+    - target: {fileID: 5511676600334001896, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: firePoint
       value: 
-      objectReference: {fileID: 11400000, guid: 2cddab38a0a1d674e85e0d344de23616, type: 2}
-    - target: {fileID: 6459599448566326497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: m_Enabled
+      objectReference: {fileID: 1046091377}
+    - target: {fileID: 5792607650868875926, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 2692814679932740603, guid: 6c05462dd5eed2840953b7751f59a327, type: 3}
+    - target: {fileID: 5792607650868875926, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: jumpForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927085779655727734, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6459599448566326497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: skillPoint
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6459599448566326497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: skillPrefab
-      value: 
-      objectReference: {fileID: 8176997570006321217, guid: 92fc59a3ad57bbe42a00f2c9d4737ca7, type: 3}
-    - target: {fileID: 6719591896564713976, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 887290025}
-    - target: {fileID: 6719591896564713976, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: skillPoint
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6719591896564713976, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: skillPrefab
-      value: 
-      objectReference: {fileID: 8176997570006321217, guid: 92fc59a3ad57bbe42a00f2c9d4737ca7, type: 3}
-    - target: {fileID: 6719591896564713976, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
-      propertyPath: spriterenderer
-      value: 
-      objectReference: {fileID: 887290026}
     - target: {fileID: 7196364842677439029, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6459599448566326497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects:
-    - {fileID: 4097768420183723051, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+    - {fileID: 5927085779655727734, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+    - {fileID: 2051761119145812656, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+    - {fileID: 9177073176990353893, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}

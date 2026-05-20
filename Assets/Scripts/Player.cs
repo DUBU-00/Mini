@@ -217,4 +217,8 @@ public class Player : MonoBehaviour
             _isGrounded = false;
         }
     }
+    public bool Get_isFacingRight()
+    {
+        return _isFacingRight;
+    }
 }

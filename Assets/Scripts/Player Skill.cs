@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -6,12 +7,14 @@ public class PlayerSkill : MonoBehaviour
 {
     [SerializeField] private GameObject skillPrefab;
     [SerializeField] private Transform firePoint;
+    private Player player;
 
     private bool canInput;
-
+    private bool _isright;
     void Start()
     {
         StartCoroutine(EnableInput());
+        player = this.GetComponent<Player>();
     }
     IEnumerator EnableInput()
     {
@@ -24,8 +27,12 @@ public class PlayerSkill : MonoBehaviour
             return;
 
         if (Input.GetKeyDown(KeyCode.Z))
-        {   
-            Instantiate(skillPrefab, firePoint.position, firePoint.rotation);
+        {
+            _isright = player.Get_isFacingRight();
+            GameObject Fireball = Instantiate(skillPrefab, firePoint.position, firePoint.rotation);
+
+            
+            Fireball.GetComponent<SkillFireball>().InitSkill(_isright, firePoint.position);
         }
     }
 }
