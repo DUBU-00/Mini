@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
+        CheckGround();
         h = Input.GetAxisRaw("Horizontal");
         moveInput = Input.GetAxisRaw("Horizontal");
         Jump();
@@ -102,7 +103,7 @@ public class Player : MonoBehaviour
     }
     void Animation()
     {
-        bool isMoving = Mathf.Abs(_rigidbody.linearVelocity.x) > 0.05f;
+        bool isMoving = Mathf.Abs(h) > 0.1f;
 
         _animator.SetBool("isMove", isMoving);
         _animator.SetBool("isGrounded", _isGrounded);
@@ -115,19 +116,12 @@ public class Player : MonoBehaviour
 
             _animator.SetTrigger("Jump");
             _isGrounded = false;
-            _animator.SetBool("isGrounded", false);
         }
     }
     void CheckGround()
     {
-        if (_rigidbody.linearVelocity.y > 0.01f)
-        {
-            _isGrounded = false;
-        }
-        else
-        {
-            _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        }
+        _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        _animator.SetBool("isGrounded", _isGrounded);
     }
     public void AttackHit()
     {
@@ -203,20 +197,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            _isGrounded = true;
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            _isGrounded = false;
-        }
-    }
+    
     public bool Get_isFacingRight()
     {
         return _isFacingRight;
