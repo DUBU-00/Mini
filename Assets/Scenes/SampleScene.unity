@@ -1030,6 +1030,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 521278316}
+  respawnTime: 10
+  hpBarobject: {fileID: 216638437}
 --- !u!114 &150382355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,13 +1044,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 1726762745}
   wallCheck: {fileID: 1066184275}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &150382356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,6 +1389,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1619583922}
+  respawnTime: 10
+  hpBarobject: {fileID: 1307676824}
 --- !u!114 &181787822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1396,13 +1403,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 1888943802}
   wallCheck: {fileID: 967241412}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &181787823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2200,6 +2210,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 1170964449}
+  respawnTime: 10
+  hpBarobject: {fileID: 1140238468}
 --- !u!114 &263225466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,13 +2224,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 815764150}
   wallCheck: {fileID: 1772157916}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &263225467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9040,6 +9055,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 1324710755}
+  respawnTime: 10
+  hpBarobject: {fileID: 853777131}
 --- !u!114 &675711330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9052,13 +9069,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 2012064321}
   wallCheck: {fileID: 1763199525}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &675711331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9272,6 +9292,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 1672476271}
+  respawnTime: 10
+  hpBarobject: {fileID: 1029795021}
 --- !u!114 &676221055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9284,13 +9306,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 62050587}
   wallCheck: {fileID: 1574642837}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &676221056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9631,6 +9656,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 357944890}
+  respawnTime: 10
+  hpBarobject: {fileID: 2103801286}
 --- !u!114 &742967378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9643,13 +9670,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 164304634}
   wallCheck: {fileID: 948431361}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &742967379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9970,6 +10000,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 2080241867}
+  respawnTime: 10
+  hpBarobject: {fileID: 1109115683}
 --- !u!114 &749233393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9982,13 +10014,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 986350335}
   wallCheck: {fileID: 133196858}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &749233394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10380,6 +10415,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 1813002793}
+  respawnTime: 10
+  hpBarobject: {fileID: 83428065}
 --- !u!114 &765727948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10392,13 +10429,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 1017297628}
   wallCheck: {fileID: 1640218332}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &765727949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11333,6 +11373,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1714245698}
+  respawnTime: 10
+  hpBarobject: {fileID: 1098321417}
 --- !u!114 &867125052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11345,13 +11387,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 2142352252}
   wallCheck: {fileID: 1594988427}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &867125053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11627,6 +11672,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 792547603}
+  respawnTime: 10
+  hpBarobject: {fileID: 1288305316}
 --- !u!114 &884003492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11639,13 +11686,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 1426432147}
   wallCheck: {fileID: 314765675}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &884003493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11864,6 +11914,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 325181094}
+  respawnTime: 10
+  hpBarobject: {fileID: 1434808370}
 --- !u!114 &894296170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11876,13 +11928,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 285084358}
   wallCheck: {fileID: 1900062914}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &894296171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12746,6 +12801,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 2099612202}
+  respawnTime: 10
+  hpBarobject: {fileID: 1045491234}
 --- !u!114 &943580102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12758,13 +12815,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 199340377}
   wallCheck: {fileID: 286991324}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &943580103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13081,6 +13141,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 243858994}
+  respawnTime: 10
+  hpBarobject: {fileID: 1789470140}
 --- !u!114 &954749769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13093,13 +13155,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 520719009}
   wallCheck: {fileID: 1306545163}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &954749770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13877,6 +13942,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 499373975}
+  respawnTime: 10
+  hpBarobject: {fileID: 894472552}
 --- !u!114 &1015749540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13889,13 +13956,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 1063700100}
   wallCheck: {fileID: 1301973902}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1015749541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14441,6 +14511,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 2142410821}
+  respawnTime: 10
+  hpBarobject: {fileID: 1864026957}
 --- !u!114 &1044358001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14453,13 +14525,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 96115154}
   wallCheck: {fileID: 981247990}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1044358002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16041,6 +16116,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 1980949824}
+  respawnTime: 10
+  hpBarobject: {fileID: 2105619008}
 --- !u!114 &1195358210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16053,13 +16130,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 976225940}
   wallCheck: {fileID: 1074319959}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1195358211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16842,6 +16922,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 894928972}
+  respawnTime: 10
+  hpBarobject: {fileID: 2081559437}
 --- !u!114 &1263568258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16854,13 +16936,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 1786355231}
   wallCheck: {fileID: 837413550}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1263568259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17240,6 +17325,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 260284658}
+  respawnTime: 10
+  hpBarobject: {fileID: 2135738660}
 --- !u!114 &1300708079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17252,13 +17339,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 307496371}
   wallCheck: {fileID: 1650129885}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1300708080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18026,6 +18116,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 132348733}
+  respawnTime: 10
+  hpBarobject: {fileID: 1078745467}
 --- !u!114 &1362892855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18038,13 +18130,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 35809385}
   wallCheck: {fileID: 988609548}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1362892856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18349,6 +18444,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1229305326}
+  respawnTime: 10
+  hpBarobject: {fileID: 528295081}
 --- !u!114 &1387342229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18361,13 +18458,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 935286730}
   wallCheck: {fileID: 683973783}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1387342230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19246,6 +19346,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1518984052}
+  respawnTime: 10
+  hpBarobject: {fileID: 1337534516}
 --- !u!114 &1549546775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19258,13 +19360,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 749201956}
   wallCheck: {fileID: 918494464}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1549546776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19478,6 +19583,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1071521962}
+  respawnTime: 10
+  hpBarobject: {fileID: 764078362}
 --- !u!114 &1557610813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19490,13 +19597,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 1906311555}
   wallCheck: {fileID: 935649331}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1557610814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20053,6 +20163,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 286587529}
+  respawnTime: 10
+  hpBarobject: {fileID: 1395966627}
 --- !u!114 &1607922281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20065,13 +20177,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 1191800038}
   wallCheck: {fileID: 391641075}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1607922282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21039,6 +21154,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 865502206}
+  respawnTime: 10
+  hpBarobject: {fileID: 400639333}
 --- !u!114 &1700011502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21051,13 +21168,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 896071150}
   wallCheck: {fileID: 1209677729}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1700011503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21439,6 +21559,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1179877094}
+  respawnTime: 10
+  hpBarobject: {fileID: 780928913}
 --- !u!114 &1782384596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21451,13 +21573,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 1882626160}
   wallCheck: {fileID: 40072979}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1782384597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22152,6 +22277,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 1193437839}
+  respawnTime: 10
+  hpBarobject: {fileID: 2013157184}
 --- !u!114 &1850639698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22164,13 +22291,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 868568456}
   wallCheck: {fileID: 644190514}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1850639699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22974,6 +23104,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 40
   hpFill: {fileID: 1387544196}
+  respawnTime: 10
+  hpBarobject: {fileID: 1653250854}
 --- !u!114 &1909462921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22986,13 +23118,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 3
+  moveSpeed: 1.7
   groundCheck: {fileID: 327162171}
   wallCheck: {fileID: 770128673}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1909462922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23308,6 +23443,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 20
   hpFill: {fileID: 2010538595}
+  respawnTime: 10
+  hpBarobject: {fileID: 1214440049}
 --- !u!114 &1969773328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23320,13 +23457,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 2
+  moveSpeed: 1
   groundCheck: {fileID: 1506578290}
   wallCheck: {fileID: 1301139784}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &1969773329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24269,6 +24409,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 1599014635}
+  respawnTime: 10
+  hpBarobject: {fileID: 1013682891}
 --- !u!114 &2047085944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24281,13 +24423,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 1847918997}
   wallCheck: {fileID: 1064766693}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &2047085945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25454,6 +25599,8 @@ MonoBehaviour:
   knockbackPower: 5
   maxHp: 60
   hpFill: {fileID: 1795896427}
+  respawnTime: 10
+  hpBarobject: {fileID: 1932285846}
 --- !u!114 &2138736629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25466,13 +25613,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27aeadd781951c9489e93e01b405aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterPatrol
-  moveSpeed: 4
+  moveSpeed: 2.2
   groundCheck: {fileID: 1564097544}
   wallCheck: {fileID: 877582209}
   checkDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  player: {fileID: 887290022}
+  chaseDistance: 1
+  chaseDuration: 3
 --- !u!114 &2138736630
 MonoBehaviour:
   m_ObjectHideFlags: 0
