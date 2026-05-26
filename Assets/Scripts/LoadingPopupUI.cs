@@ -8,6 +8,8 @@ public class LodingPopupUI : MonoBehaviour
     [SerializeField] private Slider Slider_Loadingbar;
 
     private Coroutine loadingCoroutine;
+    private GameObject hpUI;
+
     private void OnEnable()
     {
         LoadImage();

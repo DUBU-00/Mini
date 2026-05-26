@@ -562,7 +562,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1166,6 +1166,7 @@ GameObject:
   - component: {fileID: 150382356}
   - component: {fileID: 150382355}
   - component: {fileID: 150382354}
+  - component: {fileID: 150382359}
   - component: {fileID: 150382353}
   - component: {fileID: 150382352}
   m_Layer: 6
@@ -1223,12 +1224,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &150382353
 Rigidbody2D:
@@ -1389,6 +1390,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &150382359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150382350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &164304633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,6 +1539,7 @@ GameObject:
   - component: {fileID: 181787823}
   - component: {fileID: 181787822}
   - component: {fileID: 181787821}
+  - component: {fileID: 181787826}
   - component: {fileID: 181787820}
   - component: {fileID: 181787819}
   m_Layer: 6
@@ -1582,12 +1597,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &181787820
 Rigidbody2D:
@@ -1748,6 +1763,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &181787826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181787817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &190193297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,6 +2469,7 @@ GameObject:
   - component: {fileID: 263225467}
   - component: {fileID: 263225466}
   - component: {fileID: 263225465}
+  - component: {fileID: 263225470}
   - component: {fileID: 263225464}
   - component: {fileID: 263225463}
   m_Layer: 6
@@ -2498,12 +2527,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &263225464
 Rigidbody2D:
@@ -2664,6 +2693,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &263225470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263225461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &285084357
 GameObject:
   m_ObjectHideFlags: 0
@@ -9644,6 +9686,7 @@ GameObject:
   - component: {fileID: 675711331}
   - component: {fileID: 675711330}
   - component: {fileID: 675711329}
+  - component: {fileID: 675711334}
   - component: {fileID: 675711328}
   - component: {fileID: 675711327}
   m_Layer: 6
@@ -9701,12 +9744,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &675711328
 Rigidbody2D:
@@ -9867,6 +9910,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &675711334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675711325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &676221050
 GameObject:
   m_ObjectHideFlags: 0
@@ -9881,6 +9937,7 @@ GameObject:
   - component: {fileID: 676221056}
   - component: {fileID: 676221055}
   - component: {fileID: 676221054}
+  - component: {fileID: 676221059}
   - component: {fileID: 676221053}
   - component: {fileID: 676221052}
   m_Layer: 6
@@ -9938,12 +9995,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &676221053
 Rigidbody2D:
@@ -10104,6 +10161,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &676221059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676221050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &683973782
 GameObject:
   m_ObjectHideFlags: 0
@@ -10245,6 +10315,7 @@ GameObject:
   - component: {fileID: 742967379}
   - component: {fileID: 742967378}
   - component: {fileID: 742967377}
+  - component: {fileID: 742967382}
   - component: {fileID: 742967376}
   - component: {fileID: 742967375}
   m_Layer: 6
@@ -10302,12 +10373,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &742967376
 Rigidbody2D:
@@ -10468,6 +10539,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &742967382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742967373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &747614615
 GameObject:
   m_ObjectHideFlags: 0
@@ -10589,6 +10673,7 @@ GameObject:
   - component: {fileID: 749233394}
   - component: {fileID: 749233393}
   - component: {fileID: 749233392}
+  - component: {fileID: 749233397}
   - component: {fileID: 749233391}
   - component: {fileID: 749233390}
   m_Layer: 6
@@ -10646,12 +10731,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &749233391
 Rigidbody2D:
@@ -10812,6 +10897,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &749233397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749233388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &761721040
 GameObject:
   m_ObjectHideFlags: 0
@@ -11004,6 +11102,7 @@ GameObject:
   - component: {fileID: 765727949}
   - component: {fileID: 765727948}
   - component: {fileID: 765727947}
+  - component: {fileID: 765727952}
   - component: {fileID: 765727946}
   - component: {fileID: 765727945}
   m_Layer: 6
@@ -11061,12 +11160,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &765727946
 Rigidbody2D:
@@ -11227,6 +11326,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &765727952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765727943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &770128672
 GameObject:
   m_ObjectHideFlags: 0
@@ -12258,6 +12370,7 @@ GameObject:
   - component: {fileID: 867125053}
   - component: {fileID: 867125052}
   - component: {fileID: 867125051}
+  - component: {fileID: 867125056}
   - component: {fileID: 867125050}
   - component: {fileID: 867125049}
   m_Layer: 6
@@ -12315,12 +12428,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &867125050
 Rigidbody2D:
@@ -12481,6 +12594,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &867125056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867125047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &868568455
 GameObject:
   m_ObjectHideFlags: 0
@@ -12671,6 +12797,7 @@ GameObject:
   - component: {fileID: 884003493}
   - component: {fileID: 884003492}
   - component: {fileID: 884003491}
+  - component: {fileID: 884003496}
   - component: {fileID: 884003490}
   - component: {fileID: 884003489}
   m_Layer: 6
@@ -12728,12 +12855,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &884003490
 Rigidbody2D:
@@ -12894,6 +13021,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &884003496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884003487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!4 &887290022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1213946761616234437, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
@@ -12913,6 +13053,7 @@ GameObject:
   - component: {fileID: 894296171}
   - component: {fileID: 894296170}
   - component: {fileID: 894296169}
+  - component: {fileID: 894296174}
   - component: {fileID: 894296168}
   - component: {fileID: 894296167}
   m_Layer: 6
@@ -12970,12 +13111,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &894296168
 Rigidbody2D:
@@ -13136,6 +13277,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &894296174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894296165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &894472552
 GameObject:
   m_ObjectHideFlags: 0
@@ -13891,6 +14045,7 @@ GameObject:
   - component: {fileID: 943580103}
   - component: {fileID: 943580102}
   - component: {fileID: 943580101}
+  - component: {fileID: 943580106}
   - component: {fileID: 943580100}
   - component: {fileID: 943580099}
   m_Layer: 6
@@ -13948,12 +14103,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &943580100
 Rigidbody2D:
@@ -14114,6 +14269,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &943580106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943580097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &948431360
 GameObject:
   m_ObjectHideFlags: 0
@@ -14295,6 +14463,7 @@ GameObject:
   - component: {fileID: 954749770}
   - component: {fileID: 954749769}
   - component: {fileID: 954749768}
+  - component: {fileID: 954749775}
   - component: {fileID: 954749774}
   - component: {fileID: 954749773}
   m_Layer: 6
@@ -14484,12 +14653,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &954749774
 Rigidbody2D:
@@ -14518,6 +14687,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &954749775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954749766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &958005502
 GameObject:
   m_ObjectHideFlags: 0
@@ -15123,6 +15305,7 @@ GameObject:
   - component: {fileID: 1015749541}
   - component: {fileID: 1015749540}
   - component: {fileID: 1015749539}
+  - component: {fileID: 1015749544}
   - component: {fileID: 1015749538}
   - component: {fileID: 1015749537}
   m_Layer: 6
@@ -15180,12 +15363,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1015749538
 Rigidbody2D:
@@ -15346,6 +15529,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1015749544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015749535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1017297627
 GameObject:
   m_ObjectHideFlags: 0
@@ -15756,6 +15952,7 @@ GameObject:
   - component: {fileID: 1044358002}
   - component: {fileID: 1044358001}
   - component: {fileID: 1044358000}
+  - component: {fileID: 1044358007}
   - component: {fileID: 1044358006}
   - component: {fileID: 1044358005}
   m_Layer: 6
@@ -15945,12 +16142,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1044358006
 Rigidbody2D:
@@ -15979,6 +16176,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1044358007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044357998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1045491234
 GameObject:
   m_ObjectHideFlags: 0
@@ -17308,6 +17518,7 @@ GameObject:
   - component: {fileID: 1195358211}
   - component: {fileID: 1195358210}
   - component: {fileID: 1195358209}
+  - component: {fileID: 1195358214}
   - component: {fileID: 1195358208}
   - component: {fileID: 1195358207}
   m_Layer: 6
@@ -17365,12 +17576,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1195358208
 Rigidbody2D:
@@ -17531,6 +17742,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1195358214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195358205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1209677728
 GameObject:
   m_ObjectHideFlags: 0
@@ -17664,6 +17888,81 @@ Canvas:
   m_SortingLayerID: 851128755
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1217934003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217934004}
+  - component: {fileID: 1217934006}
+  - component: {fileID: 1217934005}
+  m_Layer: 6
+  m_Name: HP_Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1217934004
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217934003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839000276}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 26, y: 2}
+  m_SizeDelta: {x: 420, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1217934005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217934003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5672574732366779016, guid: 17026eb7ce293644f8ed852822b7a7b2, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1217934006
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217934003}
+  m_CullTransparentMesh: 1
 --- !u!1 &1225071439
 GameObject:
   m_ObjectHideFlags: 0
@@ -18179,6 +18478,7 @@ GameObject:
   - component: {fileID: 1263568258}
   - component: {fileID: 1263568257}
   - component: {fileID: 1263568263}
+  - component: {fileID: 1263568264}
   - component: {fileID: 1263568262}
   m_Layer: 6
   m_Name: Green_Slime
@@ -18196,7 +18496,7 @@ Transform:
   m_GameObject: {fileID: 1263568255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 46.87, y: -2.642, z: 0}
+  m_LocalPosition: {x: 46.87, y: -2.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18367,12 +18667,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Offset: {x: 0.0011558325, y: -0.17468284}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1263568263
 Rigidbody2D:
@@ -18401,6 +18701,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1263568264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263568255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1288305316
 GameObject:
   m_ObjectHideFlags: 0
@@ -18517,6 +18830,7 @@ GameObject:
   - component: {fileID: 1300708080}
   - component: {fileID: 1300708079}
   - component: {fileID: 1300708078}
+  - component: {fileID: 1300708083}
   - component: {fileID: 1300708077}
   - component: {fileID: 1300708076}
   m_Layer: 6
@@ -18574,12 +18888,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1300708077
 Rigidbody2D:
@@ -18740,6 +19054,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1300708083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300708074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1301139783
 GameObject:
   m_ObjectHideFlags: 0
@@ -19308,6 +19635,7 @@ GameObject:
   - component: {fileID: 1362892856}
   - component: {fileID: 1362892855}
   - component: {fileID: 1362892854}
+  - component: {fileID: 1362892859}
   - component: {fileID: 1362892853}
   - component: {fileID: 1362892852}
   m_Layer: 6
@@ -19365,12 +19693,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1362892853
 Rigidbody2D:
@@ -19531,6 +19859,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1362892859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362892850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1366673190
 GameObject:
   m_ObjectHideFlags: 0
@@ -19636,6 +19977,7 @@ GameObject:
   - component: {fileID: 1387342230}
   - component: {fileID: 1387342229}
   - component: {fileID: 1387342228}
+  - component: {fileID: 1387342233}
   - component: {fileID: 1387342227}
   - component: {fileID: 1387342226}
   m_Layer: 6
@@ -19693,12 +20035,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1387342227
 Rigidbody2D:
@@ -19859,6 +20201,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1387342233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387342224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1387544194
 GameObject:
   m_ObjectHideFlags: 0
@@ -20538,6 +20893,7 @@ GameObject:
   - component: {fileID: 1549546776}
   - component: {fileID: 1549546775}
   - component: {fileID: 1549546774}
+  - component: {fileID: 1549546779}
   - component: {fileID: 1549546773}
   - component: {fileID: 1549546772}
   m_Layer: 6
@@ -20595,12 +20951,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1549546773
 Rigidbody2D:
@@ -20761,6 +21117,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1549546779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549546770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1557610808
 GameObject:
   m_ObjectHideFlags: 0
@@ -20775,6 +21144,7 @@ GameObject:
   - component: {fileID: 1557610814}
   - component: {fileID: 1557610813}
   - component: {fileID: 1557610812}
+  - component: {fileID: 1557610817}
   - component: {fileID: 1557610811}
   - component: {fileID: 1557610810}
   m_Layer: 6
@@ -20832,12 +21202,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1557610811
 Rigidbody2D:
@@ -20998,6 +21368,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1557610817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557610808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1564097543
 GameObject:
   m_ObjectHideFlags: 0
@@ -21355,6 +21738,7 @@ GameObject:
   - component: {fileID: 1607922282}
   - component: {fileID: 1607922281}
   - component: {fileID: 1607922280}
+  - component: {fileID: 1607922285}
   - component: {fileID: 1607922279}
   - component: {fileID: 1607922278}
   m_Layer: 6
@@ -21412,12 +21796,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1607922279
 Rigidbody2D:
@@ -21578,6 +21962,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1607922285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607922276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1619583920
 GameObject:
   m_ObjectHideFlags: 0
@@ -22346,6 +22743,7 @@ GameObject:
   - component: {fileID: 1700011503}
   - component: {fileID: 1700011502}
   - component: {fileID: 1700011501}
+  - component: {fileID: 1700011506}
   - component: {fileID: 1700011500}
   - component: {fileID: 1700011499}
   m_Layer: 6
@@ -22403,12 +22801,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1700011500
 Rigidbody2D:
@@ -22569,6 +22967,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1700011506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700011497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1714245696
 GameObject:
   m_ObjectHideFlags: 0
@@ -22751,6 +23162,7 @@ GameObject:
   - component: {fileID: 1782384597}
   - component: {fileID: 1782384596}
   - component: {fileID: 1782384595}
+  - component: {fileID: 1782384600}
   - component: {fileID: 1782384594}
   - component: {fileID: 1782384593}
   m_Layer: 6
@@ -22808,12 +23220,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1782384594
 Rigidbody2D:
@@ -22974,6 +23386,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1782384600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782384591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1786355230
 GameObject:
   m_ObjectHideFlags: 0
@@ -23538,6 +23963,82 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1839000275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839000276}
+  - component: {fileID: 1839000278}
+  - component: {fileID: 1839000277}
+  m_Layer: 6
+  m_Name: HP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1839000276
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839000275}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1217934004}
+  m_Father: {fileID: 2002694153}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 300, y: -100}
+  m_SizeDelta: {x: 500, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1839000277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839000275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1501116369539037563, guid: 17026eb7ce293644f8ed852822b7a7b2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1839000278
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839000275}
+  m_CullTransparentMesh: 1
 --- !u!1 &1847918996
 GameObject:
   m_ObjectHideFlags: 0
@@ -23583,6 +24084,7 @@ GameObject:
   - component: {fileID: 1850639699}
   - component: {fileID: 1850639698}
   - component: {fileID: 1850639697}
+  - component: {fileID: 1850639702}
   - component: {fileID: 1850639696}
   - component: {fileID: 1850639695}
   m_Layer: 6
@@ -23640,12 +24142,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1850639696
 Rigidbody2D:
@@ -23806,6 +24308,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1850639702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850639693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1852752404
 GameObject:
   m_ObjectHideFlags: 0
@@ -24433,6 +24948,7 @@ GameObject:
   - component: {fileID: 1909462922}
   - component: {fileID: 1909462921}
   - component: {fileID: 1909462920}
+  - component: {fileID: 1909462925}
   - component: {fileID: 1909462919}
   - component: {fileID: 1909462918}
   m_Layer: 6
@@ -24490,12 +25006,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.0060439343, y: -0.19091724}
-  m_Size: {x: 1.0036166, y: 0.55317813}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1909462919
 Rigidbody2D:
@@ -24656,6 +25172,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1909462925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909462916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1932285846
 GameObject:
   m_ObjectHideFlags: 0
@@ -24863,6 +25392,7 @@ GameObject:
   - component: {fileID: 1969773329}
   - component: {fileID: 1969773328}
   - component: {fileID: 1969773327}
+  - component: {fileID: 1969773332}
   - component: {fileID: 1969773326}
   - component: {fileID: 1969773325}
   m_Layer: 6
@@ -24920,12 +25450,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.010134407, y: -0.19263229}
-  m_Size: {x: 0.9601453, y: 0.61473864}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &1969773326
 Rigidbody2D:
@@ -25086,6 +25616,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1969773332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969773323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &1980949822
 GameObject:
   m_ObjectHideFlags: 0
@@ -25500,6 +26043,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 59278988}
+  - {fileID: 1839000276}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -26023,6 +26567,7 @@ GameObject:
   - component: {fileID: 2047085945}
   - component: {fileID: 2047085944}
   - component: {fileID: 2047085943}
+  - component: {fileID: 2047085948}
   - component: {fileID: 2047085942}
   - component: {fileID: 2047085941}
   m_Layer: 6
@@ -26080,12 +26625,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &2047085942
 Rigidbody2D:
@@ -26246,6 +26791,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2047085948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047085939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &2058704762
 GameObject:
   m_ObjectHideFlags: 0
@@ -27213,6 +27771,7 @@ GameObject:
   - component: {fileID: 2138736630}
   - component: {fileID: 2138736629}
   - component: {fileID: 2138736628}
+  - component: {fileID: 2138736633}
   - component: {fileID: 2138736627}
   - component: {fileID: 2138736626}
   m_Layer: 6
@@ -27270,12 +27829,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.007633412, y: -0.19338708}
-  m_Size: {x: 0.9898057, y: 0.60304993}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!50 &2138736627
 Rigidbody2D:
@@ -27436,6 +27995,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2138736633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138736624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
+  damage: 3
 --- !u!1 &2142352251
 GameObject:
   m_ObjectHideFlags: 0
@@ -27735,6 +28307,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.71
       objectReference: {fileID: 0}
+    - target: {fileID: 4624436965584750992, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: hpFill
+      value: 
+      objectReference: {fileID: 1217934005}
     - target: {fileID: 5511676600334001896, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: player
       value: 

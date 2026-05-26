@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 7375336939347359727}
   - component: {fileID: 5792607650868875926}
   - component: {fileID: 5511676600334001896}
+  - component: {fileID: 4624436965584750992}
   - component: {fileID: 9006841822494935125}
   - component: {fileID: 1879759566049830379}
   m_Layer: 8
@@ -260,7 +261,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkill
   skillPrefab: {fileID: 7106455007135079486, guid: 784066cfc8436184984ce98627d04f78, type: 3}
   firePoint: {fileID: 2692814679932740603, guid: 6c05462dd5eed2840953b7751f59a327, type: 3}
-  player: {fileID: 5792607650868875926}
+--- !u!114 &4624436965584750992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196364842677439029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a5f56c2a7e698458ff1734cacf51ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHp: 150
+  hpFill: {fileID: 0}
+  knockbackPower: 5
+  invincibleTime: 1
 --- !u!50 &9006841822494935125
 Rigidbody2D:
   serializedVersion: 5

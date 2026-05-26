@@ -9,6 +9,9 @@ public class MonsterHealth : MonoBehaviour
     [SerializeField] private Image hpFill;
     [SerializeField] private float respawnTime = 7f;
     [SerializeField] private GameObject hpBarobject;
+    [SerializeField] private Collider2D bodyCollider;
+    [SerializeField] private Collider2D attackCollider;
+    [SerializeField]private BoxCollider2D attackTrigger;
 
     private int currentHp;
     private Rigidbody2D rb;
@@ -48,23 +51,22 @@ public class MonsterHealth : MonoBehaviour
 
         rb.AddForce(attackDir * knockbackPower,ForceMode2D.Impulse);
 
-        StartCoroutine(HitRoutine());
-
         if (currentHp <= 0)
         {
             Die();
             return;
         }
+        StartCoroutine(HitRoutine());
         anim.SetTrigger("Hit");
     }
 
 
     void Die()
     {
+        anim.ResetTrigger("Hit");
         isDead = true;
-
         anim.SetTrigger("Die");
-
+        attackTrigger.enabled = false;
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Kinematic;
 
@@ -95,11 +97,19 @@ public class MonsterHealth : MonoBehaviour
     IEnumerator RespawnRoutine()
     {
         yield return new WaitForSeconds(1f);
+        bodyCollider.enabled = false;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+
+        col.enabled = false;
+
+        hpBarobject.SetActive(false);
         sr.enabled = false;
 
         yield return new WaitForSeconds(respawnTime);
 
         transform.position = startPos;
+        attackCollider.enabled = true;
+        bodyCollider.enabled = true;
         currentHp = maxHp;
         hpFill.fillAmount = 1;
 

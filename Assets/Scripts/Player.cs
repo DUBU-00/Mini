@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     private Animator _animator;
     private Rigidbody2D _rigidbody;
     private SpriteRenderer _renderer;
+    private PlayerHealth playerHealth;
 
     private bool _isGrounded = true;
 
@@ -38,10 +39,14 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _renderer = GetComponent<SpriteRenderer>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
     void Update()
     {
         CheckGround();
+        if (playerHealth.IsHit())
+            return;
+
         h = Input.GetAxisRaw("Horizontal");
         moveInput = Input.GetAxisRaw("Horizontal");
         Jump();
@@ -83,7 +88,7 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (_isDashing)
+        if (_isDashing || playerHealth.IsHit())
             return;
         Move();
     }
