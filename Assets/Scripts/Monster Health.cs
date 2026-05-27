@@ -11,7 +11,8 @@ public class MonsterHealth : MonoBehaviour
     [SerializeField] private GameObject hpBarobject;
     [SerializeField] private Collider2D bodyCollider;
     [SerializeField] private Collider2D attackCollider;
-    [SerializeField]private BoxCollider2D attackTrigger;
+    [SerializeField] private BoxCollider2D attackTrigger;
+    [SerializeField] private int expReward = 20;
 
     private int currentHp;
     private Rigidbody2D rb;
@@ -74,6 +75,7 @@ public class MonsterHealth : MonoBehaviour
         col.enabled = false;
 
         hpBarobject.SetActive(false);
+        GameManager.Instance.playerStats.AddExp(expReward);
 
         StartCoroutine(RespawnRoutine());
     }

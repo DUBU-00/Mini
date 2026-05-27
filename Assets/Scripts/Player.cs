@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private SpriteRenderer _renderer;
     private PlayerHealth playerHealth;
+    private PlayerStats stats;
 
     private bool _isGrounded = true;
 
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _renderer = GetComponent<SpriteRenderer>();
         playerHealth = GetComponent<PlayerHealth>();
+        stats = GetComponent<PlayerStats>();
     }
     void Update()
     {
@@ -139,7 +141,7 @@ public class Player : MonoBehaviour
             if (monster != null)
             {
                 Vector2 attackDir = (monster.transform.position - transform.position).normalized;
-                monster.TakeDamage(2, attackDir);
+                monster.TakeDamage(stats.attack1, attackDir);
             }
         }
     }
@@ -154,7 +156,7 @@ public class Player : MonoBehaviour
             if (monster != null)
             {
                 Vector2 attackDir = (monster.transform.position - transform.position).normalized;
-                monster.TakeDamage(4, attackDir);
+                monster.TakeDamage(stats.attack2, attackDir);
             }
         }
     }

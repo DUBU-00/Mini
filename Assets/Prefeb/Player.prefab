@@ -107,6 +107,8 @@ GameObject:
   - component: {fileID: 5792607650868875926}
   - component: {fileID: 5511676600334001896}
   - component: {fileID: 4624436965584750992}
+  - component: {fileID: 2342115601989131497}
+  - component: {fileID: 4514193031077714195}
   - component: {fileID: 9006841822494935125}
   - component: {fileID: 1879759566049830379}
   m_Layer: 8
@@ -277,6 +279,42 @@ MonoBehaviour:
   hpFill: {fileID: 0}
   knockbackPower: 5
   invincibleTime: 1
+--- !u!114 &2342115601989131497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196364842677439029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44c7ac267ead0641bc683e15a1de834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  expReward: 0
+  level: 1
+  currentExp: 0
+  currentHp: 0
+  maxExp: 100
+  maxHp: 100
+  attack1: 6
+  attack2: 10
+--- !u!114 &4514193031077714195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196364842677439029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f2b21a2550d0947813795d0cc13f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUI
+  stats: {fileID: 0}
+  hpSlider: {fileID: 0}
+  expSlider: {fileID: 0}
+  levelText: {fileID: 0}
 --- !u!50 &9006841822494935125
 Rigidbody2D:
   serializedVersion: 5
