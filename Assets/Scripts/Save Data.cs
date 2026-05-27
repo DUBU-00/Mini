@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-
-[System.Serializable]
-public class SaveData : MonoBehaviour
+﻿[System.Serializable]
+public class SaveData
 {
     public int level;
     public int currentExp;
