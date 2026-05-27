@@ -141,7 +141,7 @@ public class Player : MonoBehaviour
             if (monster != null)
             {
                 Vector2 attackDir = (monster.transform.position - transform.position).normalized;
-                monster.TakeDamage(stats.attack1, attackDir);
+                monster.TakeDamage(stats.NormalAttack, attackDir);
             }
         }
     }
@@ -156,7 +156,7 @@ public class Player : MonoBehaviour
             if (monster != null)
             {
                 Vector2 attackDir = (monster.transform.position - transform.position).normalized;
-                monster.TakeDamage(stats.attack2, attackDir);
+                monster.TakeDamage(stats.HardAttack, attackDir);
             }
         }
     }

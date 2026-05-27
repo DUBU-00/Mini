@@ -30,8 +30,8 @@ public class SaveManager : MonoBehaviour
         data.maxHp = player.maxHp;
         data.currentHp = player.currentHp;
 
-        data.attack = player.attack1;
-        data.attack = player.attack2;
+        data.attack1 = player.NormalAttack;
+        data.attack2 = player.HardAttack;
 
         data.posX = player.transform.position.x;
         data.posY = player.transform.position.y;
@@ -54,8 +54,8 @@ public class SaveManager : MonoBehaviour
             player.maxHp = data.maxHp;
             player.currentHp = data.currentHp;
 
-            player.attack1 = data.attack;
-            player.attack1 = data.attack;
+            player.NormalAttack = data.attack1;
+            player.HardAttack = data.attack2;
 
             player.transform.position = new Vector3(data.posX, data.posY, 0);
         }

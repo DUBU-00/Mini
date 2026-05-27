@@ -1,25 +1,25 @@
 ﻿using System.Collections;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHp = 5;
     [SerializeField] private Image hpFill;
 
     [SerializeField] private float knockbackPower = 5f;
     [SerializeField] private float invincibleTime = 1f;
 
-    private int currentHp;
     private bool isInvincible = false;
     private bool isHit = false;
 
     private Rigidbody2D rb;
     private Animator anim;
+    private PlayerStats stats;
 
     void Start()
     {
-        currentHp = maxHp;
+        stats = GetComponent<PlayerStats>();
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        hpFill.fillAmount = Mathf.Lerp(hpFill.fillAmount,(float)currentHp / maxHp,Time.deltaTime * 5f);
+        hpFill.fillAmount = Mathf.Lerp(hpFill.fillAmount,(float)stats.currentHp / stats.maxHp,Time.deltaTime * 5f);
     }
     public void TakeDamage(int damage, Vector2 hitDirection)
     {
@@ -37,10 +37,10 @@ public class PlayerHealth : MonoBehaviour
             return;
 
         isHit = true;
-        currentHp -= damage;
+        stats.currentHp -= damage;
 
-        if (currentHp < 0)
-            currentHp = 0;
+        if (stats.currentHp < 0)
+            stats.currentHp = 0;
 
         UpdateHpUI();
 
@@ -52,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(CoInvincible());
         StartCoroutine(CoHit());
 
-        if (currentHp <= 0)
+        if (stats.currentHp <= 0)
         {
             Die();
         }
@@ -69,7 +69,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void UpdateHpUI()
     {
-        hpFill.fillAmount = (float)currentHp / maxHp;
+        hpFill.fillAmount = (float)stats.currentHp / stats.maxHp;
     }
 
     private void Die()

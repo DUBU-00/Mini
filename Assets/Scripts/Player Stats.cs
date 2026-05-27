@@ -2,28 +2,19 @@
 
 public class PlayerStats : MonoBehaviour
 {
-    [SerializeField] private int expReward = 0;
 
     public int level = 1;
     public int currentExp = 0;
     public int currentHp;
     public int maxExp = 100;
     public int maxHp = 100;
-    public int attack1 = 6;
-    public int attack2 = 10;
+    public int NormalAttack = 6;
+    public int HardAttack = 10;
+    public float moveSpeed = 5f;
 
     void Start()
     {
         currentHp = maxHp;
-    }
-    private void Die()
-    {
-        PlayerStats player = FindAnyObjectByType<PlayerStats>();
-        if (player != null)
-        {
-            player.AddExp(expReward);
-        }
-        Destroy(gameObject);
     }
     public void AddExp(int amount)
     {
@@ -39,7 +30,9 @@ public class PlayerStats : MonoBehaviour
         level++;
         maxExp += 50;
         maxHp += 20;
-        attack1 += 2;
-        attack2 += 4;
+        NormalAttack += 2;
+        HardAttack += 4;
+        moveSpeed += 0.2f;
+        currentHp = maxHp;
     }
 }
