@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class SaveManager : MonoBehaviour
     private void Start()
     {
         LoadGame();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            DeleteSave();
+        }
     }
     private void OnApplicationQuit()
     {
@@ -59,5 +67,13 @@ public class SaveManager : MonoBehaviour
 
             player.transform.position = new Vector3(data.posX, data.posY, 0);
         }
+    }
+    public void DeleteSave()
+    {
+        if (File.Exists(savePath))
+        {
+            File.Delete(savePath);
+        }
+        SceneManager.LoadScene(0);
     }
 }

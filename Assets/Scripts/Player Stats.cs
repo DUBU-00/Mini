@@ -16,6 +16,13 @@ public class PlayerStats : MonoBehaviour
     {
         currentHp = maxHp;
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            AddExp(500);
+        }
+    }
     public void AddExp(int amount)
     {
         currentExp += amount;
