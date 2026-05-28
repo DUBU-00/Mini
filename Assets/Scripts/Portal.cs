@@ -3,20 +3,12 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField]
-    private Transform destination;
-
-    [SerializeField]
-    private float minX;
-
-    [SerializeField]
-    private float maxX;
-
-    [SerializeField]
-    private float minY;
-
-    [SerializeField]
-    private float maxY;
+    [SerializeField] private Transform destination;
+    [SerializeField] private float minX;
+    [SerializeField] private float maxX;
+    [SerializeField] private float minY;
+    [SerializeField] private float maxY;
+    [SerializeField] private bool isVillagePortal;
 
     private bool canTeleport = true;
 
@@ -31,6 +23,11 @@ public class Portal : MonoBehaviour
         canTeleport = false;
 
         collision.transform.position = destination.position;
+
+        if(isVillagePortal)
+        {
+            GameManager.Instance.playerStats.FullRecovery();
+        }
 
         CameraFollow cam = Camera.main.GetComponent<CameraFollow>();
 

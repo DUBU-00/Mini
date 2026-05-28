@@ -2,7 +2,6 @@
 
 public class PlayerStats : MonoBehaviour
 {
-
     public int level = 1;
     public int currentExp = 0;
     public int currentHp;
@@ -50,6 +49,11 @@ public class PlayerStats : MonoBehaviour
         {
             currentHp = maxHp;
         }
+    }
+    public void FullRecovery()
+    {
+        currentHp = maxHp;
+        potionCount = maxpotionCount;
     }
     private void LevelUP()
     {
