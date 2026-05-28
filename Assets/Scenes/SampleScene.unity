@@ -4026,6 +4026,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &296857278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8294432392190668452, guid: 4b74c6a28b766504398431f2162cc368, type: 3}
+  m_PrefabInstance: {fileID: 11091869172361671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &297468307
 GameObject:
   m_ObjectHideFlags: 0
@@ -33900,7 +33905,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -36413,6 +36418,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7879469865301797225, guid: 4b74c6a28b766504398431f2162cc368, type: 3}
+      propertyPath: gameStartButton
+      value: 
+      objectReference: {fileID: 296857278}
     - target: {fileID: 7879469865301797225, guid: 4b74c6a28b766504398431f2162cc368, type: 3}
       propertyPath: Slider_Loadingbar
       value: 
