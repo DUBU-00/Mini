@@ -10,6 +10,9 @@ public class PlayerStats : MonoBehaviour
     public int maxHp = 100;
     public int NormalAttack = 6;
     public int HardAttack = 10;
+    public int potionCount = 10;
+    public int maxpotionCount = 10;
+    public int healAmount = 50;
     public float moveSpeed = 5f;
 
     void Start()
@@ -22,6 +25,10 @@ public class PlayerStats : MonoBehaviour
         {
             AddExp(500);
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Heal();
+        }
     }
     public void AddExp(int amount)
     {
@@ -29,6 +36,19 @@ public class PlayerStats : MonoBehaviour
         while (currentExp >= maxExp)
         {
             LevelUP();
+        }
+    }
+    public void Heal()
+    {
+        if (potionCount <= 0)
+            return;
+        if (currentHp >= maxHp)
+            return;
+        potionCount--;
+        currentHp += healAmount;
+        if(currentHp > maxHp)
+        {
+            currentHp = maxHp;
         }
     }
     private void LevelUP()
