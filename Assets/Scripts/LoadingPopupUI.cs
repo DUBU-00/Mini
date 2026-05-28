@@ -85,35 +85,17 @@ public class LodingPopupUI : MonoBehaviour
         {
             SaveManager.Instance.ApplyLoadedGame();
         }
-
-        if (gameStartButton != null) gameStartButton.SetActive(false);
-        this.gameObject.SetActive(false);
+        AreaBGM.SetGameStarted();
 
         SaveData data = SaveManager.loadedData;
-
         if (GameManager.Instance == null || GameManager.Instance.playerStats == null)
-        {
-            Debug.LogError("GameManager나 playerStats가 널 상태입니다. 플레이어 위치를 옮길 수 없습니다.");
             return;
-        }
-        if (data == null)
-        {
-            Debug.LogError("SaveManager.loadedData가 널 상태입니다. 세이브 데이터를 먼저 로드해야 합니다.");
-            return;
-        }
 
         PlayerStats player = GameManager.Instance.playerStats;
 
-        player.transform.position = new Vector3(data.posX, data.posY, 0);
-        Physics2D.SyncTransforms();
+        Vector3 targetPosition = new Vector3(data.posX, data.posY, 0);
 
-        if (Camera.main != null && Camera.main.TryGetComponent<CameraFollow>(out var cameraFollow))
-        {
-            cameraFollow.MoveInstant();
-        }
-
-        Collider2D[] areas = Physics2D.OverlapPointAll(player.transform.position);
-
+        Collider2D[] areas = Physics2D.OverlapPointAll(targetPosition);
         foreach (Collider2D area in areas)
         {
             AreaBGM bgm = area.GetComponent<AreaBGM>();
@@ -123,5 +105,14 @@ public class LodingPopupUI : MonoBehaviour
                 break;
             }
         }
+        player.transform.position = targetPosition;
+        Physics2D.SyncTransforms();
+
+        if (Camera.main != null && Camera.main.TryGetComponent<CameraFollow>(out var cameraFollow))
+        {
+            cameraFollow.MoveInstant();
+        }
+        if (gameStartButton != null) gameStartButton.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

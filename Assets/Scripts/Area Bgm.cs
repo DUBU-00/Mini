@@ -4,9 +4,9 @@ public class AreaBGM : MonoBehaviour
 {
     [SerializeField] private AreaType areaType;
 
-    private bool isGameStarted = false;
+    private static bool isGameStarted = false;
     
-    public void SetGameStarted()
+    public static void SetGameStarted()
     {
         isGameStarted = true;
     }
@@ -31,11 +31,11 @@ public class AreaBGM : MonoBehaviour
         switch (areaType)
         {
             case AreaType.Village:
-                BGMManager.Instance.PlayVillage();
+                if (BGMManager.Instance != null) BGMManager.Instance.PlayVillage();
                 break;
 
             case AreaType.Dungeon:
-                BGMManager.Instance.PlayDungeon();
+                if (BGMManager.Instance != null) BGMManager.Instance.PlayDungeon();
                 break;
         }
     }
