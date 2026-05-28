@@ -13,6 +13,7 @@ public class MonsterHealth : MonoBehaviour
     [SerializeField] private Collider2D attackCollider;
     [SerializeField] private BoxCollider2D attackTrigger;
     [SerializeField] private int expReward = 20;
+    [SerializeField] private AudioClip hitSfx;
 
     private int currentHp;
     private Rigidbody2D rb;
@@ -22,6 +23,7 @@ public class MonsterHealth : MonoBehaviour
     private Vector3 startPos;
     private Collider2D col;
     private SpriteRenderer sr;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -32,6 +34,7 @@ public class MonsterHealth : MonoBehaviour
         col = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
         startPos = transform.position;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(int damage, Vector2 attackDir)
@@ -58,7 +61,11 @@ public class MonsterHealth : MonoBehaviour
             return;
         }
         StartCoroutine(HitRoutine());
-        anim.SetTrigger("Hit");
+        if (!isDead)
+        {
+            anim.SetTrigger("Hit");
+            audioSource.PlayOneShot(hitSfx);
+        }
     }
 
 
