@@ -13,9 +13,24 @@ public class CameraFollow : MonoBehaviour
 
     private Camera cam;
 
-    void Start()
+    private void Awake()
     {
         cam = GetComponent<Camera>();
+    }
+
+    private void Start()
+    {
+        if (target == null)
+        {
+            PlayerStats player = FindAnyObjectByType<PlayerStats>();
+
+            if (player != null)
+            {
+                target = player.transform;
+            }
+        }
+
+        MoveInstant();
     }
 
     void LateUpdate()
@@ -43,8 +58,8 @@ public class CameraFollow : MonoBehaviour
     {
         Vector3 targetPosition = target.position + offset;
 
-        float camHeight = cam.orthographicSize;
-        float camWidth = camHeight * cam.aspect;
+        //float camHeight = cam.orthographicSize;
+        //float camWidth = camHeight * cam.aspect;
 
         float clampX = Mathf.Clamp(targetPosition.x,minX,maxX);
 

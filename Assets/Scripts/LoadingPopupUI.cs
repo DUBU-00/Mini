@@ -36,7 +36,20 @@ public class LodingPopupUI : MonoBehaviour
         yield return StartCoroutine(SetLoading(1.0f, 1.2f));
 
         this.gameObject.SetActive(false);
-        BGMManager.Instance.PlayVillage();
+        PlayerStats player = GameManager.Instance.playerStats;
+
+        Collider2D area =
+            Physics2D.OverlapPoint(player.transform.position);
+
+        if (area != null)
+        {
+            AreaBGM areaBgm = area.GetComponent<AreaBGM>();
+
+            if (areaBgm != null)
+            {
+                areaBgm.PlayBGM();
+            }
+        }
     }
     private IEnumerator SetLoading(float taeget, float duration)
     {

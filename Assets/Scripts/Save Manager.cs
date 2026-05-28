@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,8 +12,9 @@ public class SaveManager : MonoBehaviour
         Instance = this;
         savePath = Application.persistentDataPath + "/save.json";
     }
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return null;
         LoadGame();
     }
     private void Update()
@@ -66,6 +68,8 @@ public class SaveManager : MonoBehaviour
             player.HardAttack = data.attack2;
 
             player.transform.position = new Vector3(data.posX, data.posY, 0);
+            Physics2D.SyncTransforms();
+            Camera.main.GetComponent<CameraFollow>().MoveInstant();
         }
     }
     public void DeleteSave()

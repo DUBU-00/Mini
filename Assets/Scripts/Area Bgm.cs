@@ -15,7 +15,11 @@ public class AreaBGM : MonoBehaviour
     {
         if (!collision.CompareTag("Player"))
             return;
+        PlayBGM();
+    }
 
+    public void PlayBGM()
+    {
         switch (areaType)
         {
             case AreaType.Village:
