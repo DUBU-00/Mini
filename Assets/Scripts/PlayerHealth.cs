@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     private bool isInvincible = false;
     private bool isHit = false;
+    private bool isDie = false;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -33,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int damage, Vector2 hitDirection)
     {
-        if (isInvincible || isHit) 
+        if (isDie || isInvincible || isHit) 
             return;
 
         isHit = true;
@@ -44,6 +45,12 @@ public class PlayerHealth : MonoBehaviour
 
         UpdateHpUI();
 
+        if (stats.currentHp <= 0)
+        {
+            Die();
+            return;
+        }
+        isHit = true;
         anim.SetTrigger("Hit");
 
         rb.linearVelocity = Vector2.zero;
@@ -51,19 +58,12 @@ public class PlayerHealth : MonoBehaviour
 
         StartCoroutine(CoInvincible());
         StartCoroutine(CoHit());
-
-        if (stats.currentHp <= 0)
-        {
-            Die();
-        }
     }
 
     private IEnumerator CoInvincible()
     {
         isInvincible = true;
-
         yield return new WaitForSeconds(invincibleTime);
-
         isInvincible = false;
     }
 
@@ -74,7 +74,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        isDie = true;
         anim.SetTrigger("Die");
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
     }
     private IEnumerator CoHit()
     {
@@ -84,5 +87,9 @@ public class PlayerHealth : MonoBehaviour
     public bool IsHit()
     {
         return isHit;
+    }
+    public bool IsDie()
+    {
+        return isDie;
     }
 }

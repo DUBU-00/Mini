@@ -81,19 +81,35 @@ public class LodingPopupUI : MonoBehaviour
 
     public void OnClickGameStart()
     {
+        StartCoroutine(CoGameStartSequence());
+    }
+
+    private IEnumerator CoGameStartSequence()
+    {
         if (SaveManager.Instance != null)
         {
             SaveManager.Instance.ApplyLoadedGame();
         }
+
         AreaBGM.SetGameStarted();
 
-        SaveData data = SaveManager.loadedData;
         if (GameManager.Instance == null || GameManager.Instance.playerStats == null)
-            return;
+            yield break;
 
         PlayerStats player = GameManager.Instance.playerStats;
 
+        SaveData data = SaveManager.loadedData;
         Vector3 targetPosition = new Vector3(data.posX, data.posY, 0);
+
+        player.transform.position = targetPosition;
+        Physics2D.SyncTransforms();
+
+        yield return new WaitForEndOfFrame();
+
+        if (Camera.main != null && Camera.main.TryGetComponent<CameraFollow>(out var cameraFollow))
+        {
+            cameraFollow.MoveInstant();
+        }
 
         Collider2D[] areas = Physics2D.OverlapPointAll(targetPosition);
         foreach (Collider2D area in areas)
@@ -105,13 +121,7 @@ public class LodingPopupUI : MonoBehaviour
                 break;
             }
         }
-        player.transform.position = targetPosition;
-        Physics2D.SyncTransforms();
 
-        if (Camera.main != null && Camera.main.TryGetComponent<CameraFollow>(out var cameraFollow))
-        {
-            cameraFollow.MoveInstant();
-        }
         if (gameStartButton != null) gameStartButton.SetActive(false);
         this.gameObject.SetActive(false);
     }

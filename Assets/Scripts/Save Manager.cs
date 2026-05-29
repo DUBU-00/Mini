@@ -8,6 +8,7 @@ public class SaveManager : MonoBehaviour
     public static SaveManager Instance;
     private string savePath;
     public static SaveData loadedData;
+    public bool isLoadedOnStart = true;
     private void Awake()
     {
         Instance = this;
@@ -23,7 +24,10 @@ public class SaveManager : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        SaveGame();
+        if (isLoadedOnStart)
+        {
+            SaveGame();
+        }
     }
     public void SaveGame()
     {
@@ -57,27 +61,29 @@ public class SaveManager : MonoBehaviour
             string json = File.ReadAllText(savePath);
             loadedData = JsonUtility.FromJson<SaveData>(json);
         }
+        else
+        {
+            loadedData = null;
+        }
     }
     public void ApplyLoadedGame()
     {
         LoadGame();
 
-        SaveData data = loadedData;
-
-        if (loadedData == null)
+        if (loadedData == null || !isLoadedOnStart)
         {
-            Debug.LogWarning("세이브 파일이 존재하지 않습니다. 새 게임용 기본 데이터를 생성합니다.");
+            Debug.Log("새 게임용 기본 데이터를 적용합니다.");
             loadedData = new SaveData();
 
             loadedData.level = 1;
             loadedData.maxHp = 100;
-            loadedData.currentHp = 0;
+            loadedData.currentHp = 100;
             loadedData.maxExp = 100;
             loadedData.currentExp = 0;
             loadedData.posX = -3.43f;
             loadedData.posY = -2.77f;
-            loadedData.attack1 = 4;
-            loadedData.attack2 = 6;
+            loadedData.attack1 = 6;
+            loadedData.attack2 = 10;
         }
 
         if (GameManager.Instance == null || GameManager.Instance.playerStats == null)
@@ -99,7 +105,6 @@ public class SaveManager : MonoBehaviour
 
         player.transform.position = new Vector3(loadedData.posX, loadedData.posY, 0);
         Physics2D.SyncTransforms();
-        Camera.main.GetComponent<CameraFollow>().MoveInstant();
     }
     public void DeleteSave()
     {

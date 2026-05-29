@@ -1412,6 +1412,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 150382360}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &150382355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1935,6 +1936,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 181787827}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &181787822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3452,6 +3454,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 263225471}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &263225466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12034,6 +12037,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 675711335}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &675711330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12435,6 +12439,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 676221060}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &676221055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13176,6 +13181,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 742967383}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &742967378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13552,6 +13558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a43b12ed20304f9e3d772613220bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveManager
+  isLoadedOnStart: 1
 --- !u!4 &748957576
 Transform:
   m_ObjectHideFlags: 0
@@ -13728,6 +13735,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 749233398}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &749233393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14307,6 +14315,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 765727953}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &765727948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15862,6 +15871,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 867125057}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &867125052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16516,6 +16526,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 884003497}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &884003492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16922,6 +16933,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 894296175}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &894296170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18334,6 +18346,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 943580107}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &943580102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18838,6 +18851,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 954749776}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &954749769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19894,6 +19908,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1015749545}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1015749540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20628,6 +20643,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1044358008}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1044358001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22039,7 +22055,7 @@ Transform:
   m_GameObject: {fileID: 1143115843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.58, y: -22.33, z: 0}
+  m_LocalPosition: {x: 123.7, y: 61.5, z: 0}
   m_LocalScale: {x: 46.355625, y: 14.133423, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22782,6 +22798,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1195358215}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1195358210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23752,6 +23769,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1263568265}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1263568258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24319,6 +24337,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1300708084}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1300708079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25352,6 +25371,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1362892860}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1362892855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25844,6 +25864,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1387342234}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1387342229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26743,7 +26764,7 @@ Transform:
   m_GameObject: {fileID: 1506707432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.45, y: 0.89, z: 0}
+  m_LocalPosition: {x: 0.7, y: -61.5, z: 0}
   m_LocalScale: {x: 37.95584, y: 13.291384, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27142,6 +27163,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1549546780}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1549546775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27543,6 +27565,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1557610818}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1557610813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28287,6 +28310,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1607922286}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1607922281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29544,6 +29568,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1700011507}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1700011502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30250,6 +30275,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1782384601}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1782384596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31458,6 +31484,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1850639703}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1850639698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32503,6 +32530,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1909462926}
   expReward: 15
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1909462921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33200,6 +33228,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 1969773333}
   expReward: 10
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1969773328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34563,6 +34592,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 2047085949}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &2047085944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35917,6 +35947,7 @@ MonoBehaviour:
   attackTrigger: {fileID: 2138736634}
   expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
+  dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &2138736629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36493,7 +36524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2342115601989131497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: currentHp
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2342115601989131497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: expReward

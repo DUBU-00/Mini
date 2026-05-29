@@ -14,9 +14,9 @@ public class PlayerStats : MonoBehaviour
     public int healAmount = 50;
     public float moveSpeed = 5f;
 
-    void Start()
+    void Awake()
     {
-        currentHp = maxHp;
+        InitDefaultStats();
     }
     private void Update()
     {
@@ -65,5 +65,19 @@ public class PlayerStats : MonoBehaviour
         HardAttack += 4;
         moveSpeed += 0.2f;
         currentHp = maxHp;
+    }
+    public void InitDefaultStats()
+    {
+        level = 1;
+        currentExp = 0;
+        maxExp = 100;
+        maxHp = 100;
+        currentHp = maxHp;
+        NormalAttack = 6;
+        HardAttack = 10;
+        potionCount = 10;
+        maxpotionCount = 10;
+        healAmount = 50;
+        moveSpeed = 5f;
     }
 }

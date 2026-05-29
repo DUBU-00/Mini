@@ -45,7 +45,11 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
+        if (playerHealth != null && playerHealth.IsDie())
+            return;
+
         CheckGround();
+
         if (playerHealth.IsHit())
             return;
 
@@ -93,6 +97,8 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (playerHealth != null && playerHealth.IsDie())
+            return;
         if (_isDashing || playerHealth.IsHit())
             return;
         Move();
