@@ -14,6 +14,7 @@ public class MonsterHealth : MonoBehaviour
     [SerializeField] private BoxCollider2D attackTrigger;
     [SerializeField] private int expReward = 20;
     [SerializeField] private AudioClip hitSfx;
+    [SerializeField] private AudioClip dieSfx;
 
     private int currentHp;
     private Rigidbody2D rb;
@@ -61,9 +62,10 @@ public class MonsterHealth : MonoBehaviour
             return;
         }
         StartCoroutine(HitRoutine());
-        if (!isDead)
+        anim.SetTrigger("Hit");
+        if (audioSource != null && hitSfx != null)
         {
-            anim.SetTrigger("Hit");
+            
             audioSource.PlayOneShot(hitSfx);
         }
     }
@@ -74,11 +76,16 @@ public class MonsterHealth : MonoBehaviour
         anim.ResetTrigger("Hit");
         isDead = true;
         anim.SetTrigger("Die");
+
+        if (audioSource !=null && dieSfx != null)
+        {
+            audioSource.PlayOneShot(dieSfx);
+        }
         attackTrigger.enabled = false;
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Kinematic;
 
-        patrol.enabled = false;
+        if (patrol != null) patrol.enabled = false;
         col.enabled = false;
 
         hpBarobject.SetActive(false);
@@ -108,9 +115,7 @@ public class MonsterHealth : MonoBehaviour
         yield return new WaitForSeconds(1f);
         bodyCollider.enabled = false;
         rb.bodyType = RigidbodyType2D.Kinematic;
-
         col.enabled = false;
-
         hpBarobject.SetActive(false);
         sr.enabled = false;
 
@@ -126,14 +131,15 @@ public class MonsterHealth : MonoBehaviour
 
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.linearVelocity = Vector2.zero;
-
         col.enabled = true;
 
-        patrol.enabled = true;
-        patrol.ResetState();
+        if (patrol != null)
+        {
+            patrol.enabled = true;
+            patrol.ResetState();
+        }
 
         hpBarobject.SetActive(true);
-
         sr.enabled = true;
 
         anim.Rebind();
