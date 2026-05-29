@@ -17,11 +17,11 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private PlayerStats stats;
+    private SpriteRenderer sr;
 
     void Start()
     {
         stats = GetComponent<PlayerStats>();
-
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
@@ -63,7 +63,35 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator CoInvincible()
     {
         isInvincible = true;
-        yield return new WaitForSeconds(invincibleTime);
+        int originalLayer = gameObject.layer;
+        gameObject.layer = LayerMask.NameToLayer("Invincible");
+
+        if (sr == null) sr = GetComponent<SpriteRenderer>();
+        float timer = 0f;
+        float blinkInterval = 0.1f;
+
+        while (timer < invincibleTime)
+        {
+            Color c = sr.color;
+            if (c.a == 1.0f)
+            {
+                c.a = 0.3f;
+            }
+            else
+            {
+                c.a = 1.0f;
+            }
+            sr.color = c;
+
+            yield return new WaitForSeconds(blinkInterval);
+            timer += blinkInterval;
+        }
+
+        Color finalColor = sr.color;
+        finalColor.a = 1.0f;
+        sr.color = finalColor;
+
+        gameObject.layer = originalLayer;
         isInvincible = false;
     }
 
@@ -78,6 +106,34 @@ public class PlayerHealth : MonoBehaviour
         anim.SetTrigger("Die");
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Static;
+        StartCoroutine(CoRespawn());
+    }
+    private IEnumerator CoRespawn()
+    {
+        yield return new WaitForSeconds(2.0f);
+        Vector3 villagePosition = new Vector3(-3.43f, -2.77f, 0f);
+        transform.position = villagePosition;
+        Physics2D.SyncTransforms();
+
+        if (Camera.main != null && Camera.main.TryGetComponent<CameraFollow>(out var cameraFollow))
+        {
+            cameraFollow.MoveInstant();
+        }
+
+        if (stats != null)
+        {
+            stats.currentHp = stats.maxExp;
+        }
+        UpdateHpUI();
+
+        rb.bodyType = RigidbodyType2D.Dynamic;
+
+        isDie = false;
+        isHit = false;
+        isInvincible = false;
+
+        anim.Rebind();
+        anim.Update(0f);
     }
     private IEnumerator CoHit()
     {
