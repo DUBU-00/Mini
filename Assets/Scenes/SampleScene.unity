@@ -706,7 +706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -752, y: 74}
+  m_AnchoredPosition: {x: -752, y: -21}
   m_SizeDelta: {x: 350, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59537660
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &150382360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1927,14 +1927,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1619583922}
   respawnTime: 15
   hpBarobject: {fileID: 1307676824}
   bodyCollider: {fileID: 181787819}
   attackCollider: {fileID: 181787827}
   attackTrigger: {fileID: 181787827}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &181787822
@@ -2064,7 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &181787827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3582,7 +3582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &263225471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12165,7 +12165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &675711335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12430,14 +12430,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 1672476271}
   respawnTime: 15
   hpBarobject: {fileID: 1029795021}
   bodyCollider: {fileID: 676221052}
   attackCollider: {fileID: 676221060}
   attackTrigger: {fileID: 676221060}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &676221055
@@ -12567,7 +12567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &676221060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13309,7 +13309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &742967383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13863,7 +13863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &749233398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14306,14 +14306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 1813002793}
   respawnTime: 15
   hpBarobject: {fileID: 83428065}
   bodyCollider: {fileID: 765727945}
   attackCollider: {fileID: 765727953}
   attackTrigger: {fileID: 765727953}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &765727948
@@ -14443,7 +14443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &765727953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15862,14 +15862,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1714245698}
   respawnTime: 15
   hpBarobject: {fileID: 1098321417}
   bodyCollider: {fileID: 867125049}
   attackCollider: {fileID: 867125057}
   attackTrigger: {fileID: 867125057}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &867125052
@@ -15999,7 +15999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &867125057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16517,14 +16517,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 792547603}
   respawnTime: 15
   hpBarobject: {fileID: 1288305316}
   bodyCollider: {fileID: 884003489}
   attackCollider: {fileID: 884003497}
   attackTrigger: {fileID: 884003497}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &884003492
@@ -16654,7 +16654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &884003497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16924,14 +16924,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 325181094}
   respawnTime: 15
   hpBarobject: {fileID: 1434808370}
   bodyCollider: {fileID: 894296167}
   attackCollider: {fileID: 894296175}
   attackTrigger: {fileID: 894296175}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &894296170
@@ -17061,7 +17061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &894296175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18474,7 +18474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &943580107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18842,14 +18842,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 243858994}
   respawnTime: 15
   hpBarobject: {fileID: 1789470140}
   bodyCollider: {fileID: 954749773}
   attackCollider: {fileID: 954749776}
   attackTrigger: {fileID: 954749776}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &954749769
@@ -19043,7 +19043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &954749776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19899,14 +19899,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 499373975}
   respawnTime: 15
   hpBarobject: {fileID: 894472552}
   bodyCollider: {fileID: 1015749537}
   attackCollider: {fileID: 1015749545}
   attackTrigger: {fileID: 1015749545}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1015749540
@@ -20036,7 +20036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &1015749545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20634,14 +20634,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 2142410821}
   respawnTime: 15
   hpBarobject: {fileID: 1864026957}
   bodyCollider: {fileID: 1044358005}
   attackCollider: {fileID: 1044358008}
   attackTrigger: {fileID: 1044358008}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1044358001
@@ -20835,7 +20835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1044358008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22789,14 +22789,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 1980949824}
   respawnTime: 15
   hpBarobject: {fileID: 2105619008}
   bodyCollider: {fileID: 1195358207}
   attackCollider: {fileID: 1195358215}
   attackTrigger: {fileID: 1195358215}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1195358210
@@ -22926,7 +22926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &1195358215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23961,7 +23961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &1263568265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24328,14 +24328,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 260284658}
   respawnTime: 15
   hpBarobject: {fileID: 2135738660}
   bodyCollider: {fileID: 1300708076}
   attackCollider: {fileID: 1300708084}
   attackTrigger: {fileID: 1300708084}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1300708079
@@ -24465,7 +24465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1300708084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25362,14 +25362,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 132348733}
   respawnTime: 15
   hpBarobject: {fileID: 1078745467}
   bodyCollider: {fileID: 1362892852}
   attackCollider: {fileID: 1362892860}
   attackTrigger: {fileID: 1362892860}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1362892855
@@ -25499,7 +25499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &1362892860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25855,14 +25855,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1229305326}
   respawnTime: 15
   hpBarobject: {fileID: 528295081}
   bodyCollider: {fileID: 1387342226}
   attackCollider: {fileID: 1387342234}
   attackTrigger: {fileID: 1387342234}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1387342229
@@ -25992,7 +25992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1387342234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27154,14 +27154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1518984052}
   respawnTime: 15
   hpBarobject: {fileID: 1337534516}
   bodyCollider: {fileID: 1549546772}
   attackCollider: {fileID: 1549546780}
   attackTrigger: {fileID: 1549546780}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1549546775
@@ -27291,7 +27291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1549546780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27556,14 +27556,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1071521962}
   respawnTime: 15
   hpBarobject: {fileID: 764078362}
   bodyCollider: {fileID: 1557610810}
   attackCollider: {fileID: 1557610818}
   attackTrigger: {fileID: 1557610818}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1557610813
@@ -27693,7 +27693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1557610818
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28438,7 +28438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &1607922286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29559,14 +29559,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 865502206}
   respawnTime: 15
   hpBarobject: {fileID: 400639333}
   bodyCollider: {fileID: 1700011499}
   attackCollider: {fileID: 1700011507}
   attackTrigger: {fileID: 1700011507}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1700011502
@@ -29696,7 +29696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1700011507
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30266,14 +30266,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1179877094}
   respawnTime: 15
   hpBarobject: {fileID: 780928913}
   bodyCollider: {fileID: 1782384593}
   attackCollider: {fileID: 1782384601}
   attackTrigger: {fileID: 1782384601}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1782384596
@@ -30403,7 +30403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1782384601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31475,14 +31475,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 1193437839}
   respawnTime: 15
   hpBarobject: {fileID: 2013157184}
   bodyCollider: {fileID: 1850639695}
   attackCollider: {fileID: 1850639703}
   attackTrigger: {fileID: 1850639703}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1850639698
@@ -31612,7 +31612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &1850639703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32521,14 +32521,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 100
+  maxHp: 150
   hpFill: {fileID: 1387544196}
   respawnTime: 15
   hpBarobject: {fileID: 1653250854}
   bodyCollider: {fileID: 1909462918}
   attackCollider: {fileID: 1909462926}
   attackTrigger: {fileID: 1909462926}
-  expReward: 15
+  expReward: 20
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &1909462921
@@ -32658,7 +32658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 15
 --- !u!61 &1909462926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33356,7 +33356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 10
 --- !u!61 &1969773333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34583,14 +34583,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 1599014635}
   respawnTime: 15
   hpBarobject: {fileID: 1013682891}
   bodyCollider: {fileID: 2047085941}
   attackCollider: {fileID: 2047085949}
   attackTrigger: {fileID: 2047085949}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &2047085944
@@ -34720,7 +34720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &2047085949
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35938,14 +35938,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
   knockbackPower: 5
-  maxHp: 140
+  maxHp: 230
   hpFill: {fileID: 1795896427}
   respawnTime: 15
   hpBarobject: {fileID: 1932285846}
   bodyCollider: {fileID: 2138736626}
   attackCollider: {fileID: 2138736634}
   attackTrigger: {fileID: 2138736634}
-  expReward: 20
+  expReward: 30
   hitSfx: {fileID: 8300000, guid: 8dfaeefdba3fab8449e839729cd6c681, type: 3}
   dieSfx: {fileID: 8300000, guid: 971205621a2c7bb4b88b80d0fecda5b3, type: 3}
 --- !u!114 &2138736629
@@ -36075,7 +36075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41ba816843dec54fb1e0f33c8ab4aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterAttack
-  damage: 3
+  damage: 20
 --- !u!61 &2138736634
 BoxCollider2D:
   m_ObjectHideFlags: 0
