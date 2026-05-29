@@ -8,6 +8,8 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private GameObject skillPrefab;
     [SerializeField] private Transform firePoint;
     private Player player;
+    private PlayerStats stats;
+    private PlayerHealth health;
 
     private bool canInput;
     private bool _isright;
@@ -15,6 +17,8 @@ public class PlayerSkill : MonoBehaviour
     {
         StartCoroutine(EnableInput());
         player = this.GetComponent<Player>();
+        stats = this.GetComponent<PlayerStats>();
+        health = this.GetComponent<PlayerHealth>();
     }
     IEnumerator EnableInput()
     {
@@ -23,6 +27,9 @@ public class PlayerSkill : MonoBehaviour
     }
     void Update()
     {
+        if (health != null && health.IsDie())
+            return;
+
         if (!canInput)
             return;
 
@@ -33,7 +40,11 @@ public class PlayerSkill : MonoBehaviour
 
             GetComponent<PlayerAudio>().PlaySkillAttack();
 
-            Fireball.GetComponent<SkillFireball>().InitSkill(_isright, firePoint.position);
+            SkillFireball fireballComponent = Fireball.GetComponent<SkillFireball>();
+            if (fireballComponent != null)
+            {
+                fireballComponent.InitSkill(_isright, firePoint.position, stats);
+            }
         }
     }
 }

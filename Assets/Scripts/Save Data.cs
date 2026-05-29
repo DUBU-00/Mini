@@ -9,6 +9,9 @@ public class SaveData
     public int attack1;
     public int attack2;
     public int movespeed;
+    public int skillPoints;
+    public int fireballLevel;
+    public int fireballDamage;
     public float posX;
     public float posY;
 }

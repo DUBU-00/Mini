@@ -50,6 +50,10 @@ public class SaveManager : MonoBehaviour
         data.posX = player.transform.position.x;
         data.posY = player.transform.position.y;
 
+        data.skillPoints = player.skillPoints;
+        data.fireballLevel = player.fireballLevel;
+        data.fireballDamage = player.fireballDamage;
+
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(savePath, json);
     }
@@ -84,6 +88,9 @@ public class SaveManager : MonoBehaviour
             loadedData.posY = -2.77f;
             loadedData.attack1 = 6;
             loadedData.attack2 = 10;
+            loadedData.skillPoints = 0;
+            loadedData.fireballLevel = 1;
+            loadedData.fireballDamage = 15;
         }
 
         if (GameManager.Instance == null || GameManager.Instance.playerStats == null)
@@ -103,8 +110,17 @@ public class SaveManager : MonoBehaviour
         player.NormalAttack = loadedData.attack1;
         player.HardAttack = loadedData.attack2;
 
+        player.skillPoints = loadedData.skillPoints;
+        player.fireballLevel = loadedData.fireballLevel;
+        player.fireballDamage = loadedData.fireballDamage;
+
         player.transform.position = new Vector3(loadedData.posX, loadedData.posY, 0);
         Physics2D.SyncTransforms();
+        SkillUI skillUI = FindFirstObjectByType<SkillUI>();
+        if (skillUI != null)
+        {
+            skillUI.UpdateSkillUI();
+        }
     }
     public void DeleteSave()
     {

@@ -4,28 +4,31 @@ using UnityEngine.EventSystems;
 
 public class SkillFireball : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f;
-    [SerializeField] private int damage = 1;
+    [SerializeField] private float speed = 5f;
     [SerializeField] SpriteRenderer SpriteRenderer_Effect;
+    private int damage = 1;
+
+    private Vector3 _moveDirection = new Vector3(1, 0, 0);
 
     void Start()
     {
         Destroy(gameObject, 2f);
     }
-    private Vector3 _moveDirection = new Vector3(1, 0, 0);
-    public void InitSkill(bool isDirRight, Vector3 playerpos)
+    public void InitSkill(bool isDirRight, Vector3 playerpos, PlayerStats stats)
     {
         this.transform.position = playerpos;
 
-        // 사이드뷰 기준 x값만 좌 우 1 또는 -1로 지정됨
+        if (stats != null)
+        {
+            damage = stats.fireballDamage;
+        }
+        
         _moveDirection = isDirRight ? new Vector3(1, 0, 0) : new Vector3(-1, 0, 0);
         SpriteRenderer_Effect.flipX = !isDirRight;
         SpriteRenderer_Effect.flipY = !isDirRight;
     }
     void Update()
     {
-        //int a = 1;
-        //transform.Translate(new Vector3(((speed * Time.deltaTime) * a),0,0));
         transform.position += _moveDirection * speed * Time.deltaTime;
     }
 
