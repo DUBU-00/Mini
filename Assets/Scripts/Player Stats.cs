@@ -15,8 +15,16 @@ public class PlayerStats : MonoBehaviour
     public float moveSpeed = 5f;
     public int skillPoints = 0;
     public int fireballLevel = 1;
-    public int fireballDamage = 15;
+    public const int MAX_FIREBALL_LEVEL = 20;
 
+    public int FireballDamage
+    {
+        get
+        {
+            float damageRatio = Mathf.Lerp(0.5f, 1.5f, (MAX_FIREBALL_LEVEL - 1) / 19f);
+            return Mathf.FloorToInt(NormalAttack * damageRatio);
+        }
+    }
     void Awake()
     {
         InitDefaultStats();
@@ -75,6 +83,17 @@ public class PlayerStats : MonoBehaviour
             skillUI.UpdateSkillUI();
         }
     }
+    public bool UpgradeFireball()
+    {
+        if (skillPoints > 0 && fireballLevel < MAX_FIREBALL_LEVEL)
+        {
+            skillPoints--;
+            fireballLevel++;
+            Debug.Log($"파이어볼 레벨업! 현재 레벨: {fireballLevel}, 데미지: {FireballDamage}");
+            return true;
+        }
+        return false;
+    }
     public void InitDefaultStats()
     {
         level = 1;
@@ -88,20 +107,7 @@ public class PlayerStats : MonoBehaviour
         maxpotionCount = 10;
         healAmount = 50;
         moveSpeed = 5f;
-    }
-    public bool UpgradeFireball()
-    {
-        if (skillPoints > 0)
-        {
-            skillPoints--;
-            fireballLevel++;
-
-            fireballDamage += 5;
-
-            Debug.Log($"파이어볼 레벨업! 현재 레벨: {fireballLevel}, 데미지: {fireballDamage}");
-            return true;
-        }
-        Debug.Log("스킬 포인트가 부족합니다!");
-        return false;
+        skillPoints = 0;
+        fireballLevel = 1;
     }
 }

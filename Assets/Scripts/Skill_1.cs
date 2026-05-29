@@ -6,7 +6,7 @@ public class SkillFireball : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     [SerializeField] SpriteRenderer SpriteRenderer_Effect;
-    private int damage = 1;
+    private int damage;
 
     private Vector3 _moveDirection = new Vector3(1, 0, 0);
 
@@ -20,7 +20,7 @@ public class SkillFireball : MonoBehaviour
 
         if (stats != null)
         {
-            damage = stats.fireballDamage;
+            damage = stats.FireballDamage;
         }
         
         _moveDirection = isDirRight ? new Vector3(1, 0, 0) : new Vector3(-1, 0, 0);

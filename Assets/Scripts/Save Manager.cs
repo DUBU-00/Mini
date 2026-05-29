@@ -52,7 +52,7 @@ public class SaveManager : MonoBehaviour
 
         data.skillPoints = player.skillPoints;
         data.fireballLevel = player.fireballLevel;
-        data.fireballDamage = player.fireballDamage;
+        data.fireballDamage = player.FireballDamage;
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(savePath, json);
@@ -112,7 +112,6 @@ public class SaveManager : MonoBehaviour
 
         player.skillPoints = loadedData.skillPoints;
         player.fireballLevel = loadedData.fireballLevel;
-        player.fireballDamage = loadedData.fireballDamage;
 
         player.transform.position = new Vector3(loadedData.posX, loadedData.posY, 0);
         Physics2D.SyncTransforms();

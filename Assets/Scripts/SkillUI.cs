@@ -12,7 +12,7 @@ public class SkillUI : MonoBehaviour
     void Start()
     {
         GameObject player = GameObject.FindWithTag("Player");
-        if (player == null )
+        if (player != null )
         {
             stats = player.GetComponent<PlayerStats>();
         }
@@ -23,7 +23,23 @@ public class SkillUI : MonoBehaviour
     }
     void OnEnable()
     {
+        EnsurePlayerStatsConnected();
         UpdateSkillUI();
+    }
+    private void EnsurePlayerStatsConnected()
+    {
+        if (stats == null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                stats = player.GetComponent<PlayerStats>();
+            }
+            else
+            {
+                stats = FindFirstObjectByType<PlayerStats>();
+            }
+        }
     }
     public void UpdateSkillUI()
     {
@@ -32,17 +48,18 @@ public class SkillUI : MonoBehaviour
         if (skillPointText != null)
             skillPointText.text = "SP : " + stats.skillPoints;
         if (fireballLvText != null)
-            fireballLvText.text = "파이어볼 Lv." + stats.fireballLevel;
+        {
+            if (stats.fireballLevel >= PlayerStats.MAX_FIREBALL_LEVEL)
+                fireballLvText.text = "파이어볼 Lv.20 (MAX)";
+            else
+                fireballLvText.text = "파이어볼 Lv." + stats.fireballLevel;
+        }
         if (upgradeButton != null)
         {
-            if (stats.skillPoints > 0)
-            {
+            if (stats.skillPoints > 0 && stats.fireballLevel < PlayerStats.MAX_FIREBALL_LEVEL)
                 upgradeButton.SetActive(true);
-            }
             else
-            {
                 upgradeButton.SetActive(false);
-            }
         }
     }
     public void OnClickUpgradeFireball()
