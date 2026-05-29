@@ -55,10 +55,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             _animator.SetTrigger("isAttack");
+            GetComponent<PlayerAudio>().PlayNormalAttack();
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             _animator.SetTrigger("isAttack2");
+            GetComponent<PlayerAudio>().PlayHardAttack();
         }
         if (moveInput > 0)
         {
@@ -71,6 +73,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             StartCoroutine(Dash());
+            GetComponent<PlayerAudio>().PlayDash();
         }
         Vector3 pos = attackPoint.localPosition;
 

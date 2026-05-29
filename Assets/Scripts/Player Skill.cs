@@ -31,7 +31,8 @@ public class PlayerSkill : MonoBehaviour
             _isright = player.Get_isFacingRight();
             GameObject Fireball = Instantiate(skillPrefab, firePoint.position, firePoint.rotation);
 
-            
+            GetComponent<PlayerAudio>().PlaySkillAttack();
+
             Fireball.GetComponent<SkillFireball>().InitSkill(_isright, firePoint.position);
         }
     }
