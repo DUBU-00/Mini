@@ -4,14 +4,11 @@ public class BGMManager : MonoBehaviour
 {
     public static BGMManager Instance;
 
-    [SerializeField]
-    private AudioSource audioSource;
-
-    [SerializeField]
-    private AudioClip villageBGM;
-
-    [SerializeField]
-    private AudioClip dungeonBGM;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip villageBGM;
+    [SerializeField] private AudioClip dungeonBGM;
+    [SerializeField] private AudioClip dungeon_3BGM;
+    [SerializeField] private AudioClip bossBGM;
 
     private void Awake()
     {
@@ -29,23 +26,19 @@ public class BGMManager : MonoBehaviour
         }
     }
 
-    public void PlayVillage()
+    public void PlayVillage() => PlayBGM(villageBGM);
+    public void PlayDungeon() => PlayBGM(dungeonBGM);
+    public void PlayDungeon_3() => PlayBGM(dungeon_3BGM);
+    public void PlayBoss() => PlayBGM(bossBGM);
+
+    public void PlayBGM(AudioClip clip)
     {
-        if (audioSource.clip == villageBGM && audioSource.isPlaying) 
+        if (clip == null) return;
+        if (audioSource.clip == clip && audioSource.isPlaying) 
             return;
 
         audioSource.Stop();
-        audioSource.clip = villageBGM;
-        audioSource.Play();
-    }
-
-    public void PlayDungeon()
-    {
-        if (audioSource.clip == dungeonBGM && audioSource.isPlaying) 
-            return;
-
-        audioSource.Stop();
-        audioSource.clip = dungeonBGM;
+        audioSource.clip = clip;
         audioSource.Play();
     }
 }

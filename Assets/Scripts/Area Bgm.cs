@@ -13,7 +13,9 @@ public class AreaBGM : MonoBehaviour
     public enum AreaType
     {
         Village,
-        Dungeon
+        Dungeon,
+        Dungeon_3,
+        Boss
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,6 +38,14 @@ public class AreaBGM : MonoBehaviour
 
             case AreaType.Dungeon:
                 if (BGMManager.Instance != null) BGMManager.Instance.PlayDungeon();
+                break;
+
+            case AreaType.Dungeon_3:
+                if (BGMManager.Instance != null) BGMManager.Instance.PlayDungeon_3();
+                break;
+
+            case AreaType.Boss:
+                if (BGMManager.Instance != null) BGMManager.Instance.PlayBoss();
                 break;
         }
     }
