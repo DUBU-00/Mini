@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    [Range(1f, 5f)] private float moveSpeed = 1f;
+    [Range(1f, 10f)] private float moveSpeed = 1f;
 
     [SerializeField] private float jumpForce = 1f;
     [SerializeField] private Transform groundCheck;
