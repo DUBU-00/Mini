@@ -350,6 +350,7 @@ public class BossAI : MonoBehaviour
         {
             GameManager.Instance.playerStats.AddExp(expReward);
         }
+        Destroy(gameObject, 2f);
     }
 
     Spine.TrackEntry PlayAnim(string name, bool loop)
