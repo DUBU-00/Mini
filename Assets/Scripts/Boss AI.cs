@@ -18,6 +18,7 @@ public class BossAI : MonoBehaviour
     [SerializeField] private int expReward = 500;
     [SerializeField] private AudioClip hitSfx;
     [SerializeField] private AudioClip dieSfx;
+    [SerializeField] private float hitCooldown = 0.4f;
 
     [Header("컴포넌트 및 콜라이더 제어")]
     [SerializeField] private Collider2D bodyCollider;
@@ -70,6 +71,7 @@ public class BossAI : MonoBehaviour
     private float stateTimer = 0f;
     private int currentAttackDamage;
     private bool isUIActivated = false;
+    private float lastHitTime = -999f;
     private Vector3 startPos;
 
     private Rigidbody2D rb;
@@ -305,7 +307,11 @@ public class BossAI : MonoBehaviour
             Die();
             return;
         }
-
+        if (currentState == State.Hit || Time.time < lastHitTime + hitCooldown)
+        {
+            return;
+        }
+        lastHitTime = Time.time;
         isActionPlaying = true;
         currentState = State.Hit;
         var hitTrack = PlayAnim(animDamage, false);
