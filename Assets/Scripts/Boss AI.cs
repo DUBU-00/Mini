@@ -32,6 +32,7 @@ public class BossAI : MonoBehaviour
     public float attackRange = 5f;
     public float skillRange = 6f;
     public float loseSightRange = 30f;
+    public float attackSpeedMultiplier = 2f;
 
     [Header("공격별 데미지 설정")]
     public int damageAttack = 30;
@@ -212,10 +213,14 @@ public class BossAI : MonoBehaviour
                     currentDuration = durationAttack2;
                 }
 
-                StartCoroutine(EnableAttackColliderRoutine(currentDelay, currentDuration));
+                StartCoroutine(EnableAttackColliderRoutine(currentDelay / attackSpeedMultiplier, currentDuration / attackSpeedMultiplier));
 
                 var attackTrack = PlayAnim(randomAttack, false);
-                if (attackTrack != null) attackTrack.Complete += OnActionComplete;
+                if (attackTrack != null)
+                {
+                    attackTrack.TimeScale = attackSpeedMultiplier;
+                    attackTrack.Complete += OnActionComplete;
+                }
                 else isActionPlaying = false;
                 break;
 
@@ -240,10 +245,14 @@ public class BossAI : MonoBehaviour
                     currentDuration = durationGap;
                 }
 
-                    StartCoroutine(EnableAttackColliderRoutine(currentSkillDelay, currentSkillDuration));
+                    StartCoroutine(EnableAttackColliderRoutine(currentSkillDelay / attackSpeedMultiplier, currentSkillDuration / attackSpeedMultiplier));
 
                 var skillTrack = PlayAnim(randomSkill, false);
-                if (skillTrack != null) skillTrack.Complete += OnActionComplete;
+                if (skillTrack != null)
+                {
+                    skillTrack.TimeScale = attackSpeedMultiplier;
+                    skillTrack.Complete += OnActionComplete;
+                }
                 else isActionPlaying = false;
                 break;
         }

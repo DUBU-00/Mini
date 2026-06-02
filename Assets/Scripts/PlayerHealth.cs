@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private Image hpFill;
+    [SerializeField] private TextMeshProUGUI hpText;
 
     [SerializeField] private float knockbackPower = 5f;
     [SerializeField] private float invincibleTime = 1f;
@@ -25,12 +27,15 @@ public class PlayerHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        UpdateHpUI();
+        UpdateHpText();
     }
 
     private void Update()
     {
-        hpFill.fillAmount = Mathf.Lerp(hpFill.fillAmount,(float)stats.currentHp / stats.maxHp,Time.deltaTime * 5f);
+        if (stats != null)
+        {
+            hpFill.fillAmount = Mathf.Lerp(hpFill.fillAmount, (float)stats.currentHp / stats.maxHp, Time.deltaTime * 5f);
+        }
     }
     public void TakeDamage(int damage, Vector2 hitDirection)
     {
@@ -43,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
         if (stats.currentHp < 0)
             stats.currentHp = 0;
 
-        UpdateHpUI();
+        UpdateHpText();
 
         if (stats.currentHp <= 0)
         {
@@ -95,9 +100,12 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = false;
     }
 
-    private void UpdateHpUI()
+    private void UpdateHpText()
     {
-        hpFill.fillAmount = (float)stats.currentHp / stats.maxHp;
+        if (hpText != null && stats != null)
+        {
+            hpText.text = stats.currentHp.ToString() + " / " + stats.maxHp.ToString();
+        }
     }
 
     private void Die()
@@ -125,7 +133,7 @@ public class PlayerHealth : MonoBehaviour
             stats.currentHp = stats.maxHp;
             stats.potionCount = stats.maxpotionCount;
         }
-        UpdateHpUI();
+        UpdateHpText();
 
         rb.bodyType = RigidbodyType2D.Dynamic;
 
