@@ -47,6 +47,8 @@ public class SaveManager : MonoBehaviour
         data.attack1 = player.NormalAttack;
         data.attack2 = player.HardAttack;
 
+        data.movespeed = player.moveSpeed;
+
         data.posX = player.transform.position.x;
         data.posY = player.transform.position.y;
 
@@ -88,6 +90,7 @@ public class SaveManager : MonoBehaviour
             loadedData.posY = -2.77f;
             loadedData.attack1 = 6;
             loadedData.attack2 = 10;
+            loadedData.movespeed = 7f;
             loadedData.skillPoints = 0;
             loadedData.fireballLevel = 1;
             loadedData.fireballDamage = 15;
@@ -109,6 +112,8 @@ public class SaveManager : MonoBehaviour
 
         player.NormalAttack = loadedData.attack1;
         player.HardAttack = loadedData.attack2;
+
+        player.moveSpeed = loadedData.movespeed;
 
         player.skillPoints = loadedData.skillPoints;
         player.fireballLevel = loadedData.fireballLevel;

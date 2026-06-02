@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    [Range(1f, 10f)] private float moveSpeed = 1f;
-
     [SerializeField] private float jumpForce = 1f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
@@ -109,7 +106,7 @@ public class Player : MonoBehaviour
             return;
 
         Vector2 linearVelocity = _rigidbody.linearVelocity;
-        linearVelocity.x = h * moveSpeed;
+        linearVelocity.x = h * stats.moveSpeed;
         _rigidbody.linearVelocity = linearVelocity;
 
         if (h != 0)
