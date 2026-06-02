@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 42f5f45871a51b5419214eef8208690e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/mage/mage_m3/mage_m3_SkeletonData.asset
+  uploadId: 575870

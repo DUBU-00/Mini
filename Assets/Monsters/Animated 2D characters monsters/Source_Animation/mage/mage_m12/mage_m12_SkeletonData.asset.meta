@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a72d05e64c5101042a56a8b493b9a779
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Source_Animation/mage/mage_m12/mage_m12_SkeletonData.asset
+  uploadId: 575870

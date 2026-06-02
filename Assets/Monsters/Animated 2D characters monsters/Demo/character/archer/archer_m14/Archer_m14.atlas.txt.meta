@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e7b29debde9af404f9d47772d7f56504
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/archer/archer_m14/Archer_m14.atlas.txt
+  uploadId: 575870

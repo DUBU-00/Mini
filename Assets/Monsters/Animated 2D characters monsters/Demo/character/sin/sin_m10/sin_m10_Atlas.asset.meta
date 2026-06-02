@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8e9fa7565a160e84d8d8bf2232c96787
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/sin/sin_m10/sin_m10_Atlas.asset
+  uploadId: 575870

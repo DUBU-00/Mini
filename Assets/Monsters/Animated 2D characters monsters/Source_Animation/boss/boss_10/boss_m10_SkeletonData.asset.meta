@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: de701a7226dc7b54380efa03940f5687
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Source_Animation/boss/boss_10/boss_m10_SkeletonData.asset
+  uploadId: 575870

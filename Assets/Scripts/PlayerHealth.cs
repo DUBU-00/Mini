@@ -122,7 +122,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (stats != null)
         {
-            stats.currentHp = stats.maxExp;
+            stats.currentHp = stats.maxHp;
             stats.potionCount = stats.maxpotionCount;
         }
         UpdateHpUI();

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: af0354c20c87b2849b287ed2b4a789ad
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/archer/archer_m5/Archer_m5_Material.mat
+  uploadId: 575870

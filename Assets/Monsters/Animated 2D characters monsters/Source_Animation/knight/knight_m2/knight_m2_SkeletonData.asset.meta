@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e536593ac569c1f4396de58eb4fde33a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Source_Animation/knight/knight_m2/knight_m2_SkeletonData.asset
+  uploadId: 575870

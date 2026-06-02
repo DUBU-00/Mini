@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b219ad40d24ad124f80e468c5d8b27b1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/sin/sin_m3/sin_m3_SkeletonData.asset
+  uploadId: 575870

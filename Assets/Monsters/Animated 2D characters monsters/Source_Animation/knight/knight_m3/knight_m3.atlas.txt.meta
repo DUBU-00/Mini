@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 09e9fc1fefadd3e4a95cf211668362de
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Source_Animation/knight/knight_m3/knight_m3.atlas.txt
+  uploadId: 575870

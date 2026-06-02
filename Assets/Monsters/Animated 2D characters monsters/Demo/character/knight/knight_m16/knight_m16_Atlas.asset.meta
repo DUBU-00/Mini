@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ead5d449fa2ce54e8b1213437cdf885
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/knight/knight_m16/knight_m16_Atlas.asset
+  uploadId: 575870

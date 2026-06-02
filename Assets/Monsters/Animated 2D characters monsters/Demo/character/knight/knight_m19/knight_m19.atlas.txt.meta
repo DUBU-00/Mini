@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6ddf772855fbdf840b71b67ad8876a04
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/knight/knight_m19/knight_m19.atlas.txt
+  uploadId: 575870

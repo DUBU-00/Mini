@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fc2ee3dfdcb452c49a2647ad62c456af
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/boss/boss_12/boss_m12.atlas.txt
+  uploadId: 575870

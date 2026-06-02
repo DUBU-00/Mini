@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eaf7043b7deff87408f34941a5398c40
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Source_Animation/archer/archer_m14/Archer_m14_SkeletonData.asset
+  uploadId: 575870

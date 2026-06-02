@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3a7ceb7ba7fa375468d49d8090f6c009
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/knight/knight_m3/knight_m3.json
+  uploadId: 575870

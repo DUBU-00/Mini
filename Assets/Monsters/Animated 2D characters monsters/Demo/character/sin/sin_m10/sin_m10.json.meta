@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 908d791b944f83d439f498f63211e81d
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/sin/sin_m10/sin_m10.json
+  uploadId: 575870

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a41ba43bc2856f542a7dbae1b0ab00b0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/archer/archer_m3/Archer_m3_Material.mat
+  uploadId: 575870

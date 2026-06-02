@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9439a1780692f0a478b1af1514a7b7bb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Source_Animation/boss/boss_3/boss_m3_SkeletonData.asset
+  uploadId: 575870

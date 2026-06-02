@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6f7cae5f289a55b438d5e4009b959389
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247832
+  packageName: Animated 2D characters monsters
+  packageVersion: 1.0
+  assetPath: Assets/Monsters/Animated 2D characters monsters/Demo/character/archer/archer_m5/Archer_m5.atlas.txt
+  uploadId: 575870
