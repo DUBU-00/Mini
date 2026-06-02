@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using Spine.Unity;
+using TMPro;
 
 public class BossAI : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class BossAI : MonoBehaviour
     [SerializeField] private int maxHp = 10000;
     [SerializeField] private Image hpFill;
     [SerializeField] private GameObject hpBarObject;
+    [SerializeField] private TextMeshProUGUI hpText;
     [SerializeField] private float knockbackPower = 2f;
     [SerializeField] private int expReward = 500;
     [SerializeField] private AudioClip hitSfx;
@@ -116,6 +118,10 @@ public class BossAI : MonoBehaviour
         if (hpFill != null)
         {
             hpFill.fillAmount = (float)currentHp / maxHp;
+        }
+        if (hpText != null)
+        {
+            hpText.text = currentHp.ToString() + " / " + maxHp.ToString();
         }
     }
     public void ResetBoss()
