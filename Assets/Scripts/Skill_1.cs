@@ -42,6 +42,12 @@ public class SkillFireball : MonoBehaviour
                 Vector2 attackDir = (other.transform.position - transform.position).normalized;
                 hp.TakeDamage(damage, attackDir);
             }
+            BossAI boss = other.GetComponent<BossAI>();
+            if (boss != null)
+            {
+                Vector2 attackDir = (boss.transform.position - transform.position).normalized;
+                boss.TakeDamage(damage, attackDir);
+            }
             Destroy(gameObject);
         }
     }

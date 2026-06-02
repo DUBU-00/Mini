@@ -152,6 +152,12 @@ public class Player : MonoBehaviour
                 Vector2 attackDir = (monster.transform.position - transform.position).normalized;
                 monster.TakeDamage(stats.NormalAttack, attackDir);
             }
+            BossAI boss = col.GetComponent<BossAI>();
+            if (boss != null)
+            {
+                Vector2 attackDir = (boss.transform.position - transform.position).normalized;
+                boss.TakeDamage(stats.NormalAttack, attackDir);
+            }
         }
     }
     public void AttackHit2()
@@ -166,6 +172,12 @@ public class Player : MonoBehaviour
             {
                 Vector2 attackDir = (monster.transform.position - transform.position).normalized;
                 monster.TakeDamage(stats.HardAttack, attackDir);
+            }
+            BossAI boss = col.GetComponent<BossAI>();
+            if (boss != null)
+            {
+                Vector2 attackDir = (boss.transform.position - transform.position).normalized;
+                boss.TakeDamage(stats.HardAttack, attackDir);
             }
         }
     }
