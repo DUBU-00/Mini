@@ -1,60 +1,85 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Xml.Linq;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using TMPro;
 
 public class LogManager : MonoBehaviour
 {
     public static LogManager Instance;
 
-    [SerializeField] private TextMeshProUGUI expText;
+    [SerializeField] private GameObject expTextPrefab;
+    [SerializeField] private Transform logContainer;
     [SerializeField] private float fadeDuration = 1.5f;
-    [SerializeField] private float moveSpeed = 30f;
+    [SerializeField] private float moveSpeed = 60f;
 
-    private Coroutine fadeCoroutine;
-    private Vector3 originalPosition;
+    private float lastSpawnTime;
+    private float currentSpawnOffset = 0f;
 
     private void Awake()
     {
         Instance = this;
-        if (expText != null )
+
+        if (logContainer != null)
         {
-            originalPosition = expText.transform.localPosition;
-            expText.gameObject.SetActive(false);
+            RectTransform containerRect = logContainer.GetComponent<RectTransform>();
+            if (containerRect != null)
+            {
+                containerRect.anchorMin = new Vector2(1, 0);
+                containerRect.anchorMax = new Vector2(1, 0);
+                containerRect.pivot = new Vector2(1, 0);
+                containerRect.anchoredPosition = Vector2.zero;
+            }
         }
     }
     public void ShowExpLog(int amonut)
     {
-        if (expText == null) 
+        if (expTextPrefab == null || logContainer == null) 
             return;
-        if (fadeCoroutine != null)
+        if (Time.time - lastSpawnTime < 0.25f)
         {
-            StopCoroutine(fadeCoroutine);
+            currentSpawnOffset += 35f;
         }
-        fadeCoroutine = StartCoroutine(CoShowLog(amonut));
+        else
+        {
+            currentSpawnOffset = 0f;
+        }
+        lastSpawnTime = Time.time;
+
+        GameObject newLog = Instantiate(expTextPrefab, logContainer);
+        newLog.transform.localScale = Vector3.one;
+        newLog.SetActive(true);
+
+        StartCoroutine(CoFadeOutLog(newLog, amonut, currentSpawnOffset));
     }
-    private IEnumerator CoShowLog(int amonut)
+    private IEnumerator CoFadeOutLog(GameObject logObj, int amonut, float startYOffset)
     {
-        expText.transform.localPosition = originalPosition;
-        expText.text = $"경험치를 {amonut} 얻었습니다";
+        RectTransform rectTransform = logObj.GetComponent<RectTransform>();
+        TextMeshProUGUI textPro = logObj.GetComponent<TextMeshProUGUI>();
 
-        Color textColor = expText.color;
-        textColor.a = 1f;
-        expText.color = textColor;
-
-        expText.gameObject.SetActive(true);
-
-        float timer = 0f;
-        while (timer < fadeDuration)
+        if (textPro != null)
         {
-            timer += Time.deltaTime;
-            expText.transform.localPosition += Vector3.up * moveSpeed * Time.deltaTime;
+            textPro.text = $"경험치를 ({amonut}) 얻었습니다";
+            Color textColor = textPro.color;
 
-            textColor.a = Mathf.Lerp(1f, 0f, timer / fadeDuration);
-            expText.color = textColor;
+            rectTransform.anchorMin = new Vector2(1, 0);
+            rectTransform.anchorMax = new Vector2(1, 0);
+            rectTransform.pivot = new Vector2(1, 0);
 
-            yield return null;
+            rectTransform.anchoredPosition = new Vector2(-50, 100 + startYOffset);
+            float timer = 0f;
+            while (timer < fadeDuration)
+            {
+                timer += Time.deltaTime;
+
+                rectTransform.anchoredPosition += Vector2.up * moveSpeed * Time.deltaTime;
+
+                textColor.a = Mathf.Lerp(1f, 0f, timer / fadeDuration);
+                textPro.color = textColor;
+
+                yield return null;
+            }
         }
-        expText.gameObject.SetActive(false);
+        Destroy(logObj);
     }
 }

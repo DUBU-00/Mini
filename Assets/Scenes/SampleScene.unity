@@ -1348,7 +1348,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 1712730737}
   respawnTime: 15
@@ -1518,6 +1518,42 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &76762096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76762097}
+  m_Layer: 0
+  m_Name: Log_Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &76762097
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76762096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 169066063}
+  m_Father: {fileID: 1674888289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -50, y: 100}
+  m_SizeDelta: {x: 350, y: 400}
+  m_Pivot: {x: 1, y: 0}
 --- !u!1 &83428065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1838,7 @@ MonoBehaviour:
   hpFill: {fileID: 555225626}
   hpBarObject: {fileID: 1166929114}
   hpText: {fileID: 1650784586}
-  knockbackPower: 2
+  knockbackPower: 3000
   expReward: 500
   hitSfx: {fileID: 8300000, guid: 928386663ddbf1148ac1d25db405198b, type: 3}
   dieSfx: {fileID: 8300000, guid: 098aeb00676dd0d4092525ee0f742fff, type: 3}
@@ -1850,7 +1886,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -2954,7 +2990,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -2994,7 +3030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 23133973}
   respawnTime: 15
@@ -3248,7 +3284,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -3275,7 +3311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 521278316}
   respawnTime: 15
@@ -3689,6 +3725,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!224 &169066063 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+  m_PrefabInstance: {fileID: 1601747872667770729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &173198844
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,7 +4091,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -4090,7 +4131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 472756583}
   respawnTime: 15
@@ -4404,7 +4445,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -4431,7 +4472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1619583922}
   respawnTime: 15
@@ -5219,7 +5260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -466, y: 320}
+  m_AnchoredPosition: {x: 443, y: -171}
   m_SizeDelta: {x: 500, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221792065
@@ -5928,6 +5969,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1555096104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &250327522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250327524}
+  - component: {fileID: 250327523}
+  m_Layer: 0
+  m_Name: LogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &250327523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250327522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a2e761cad160f43aa77acc87233a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LogManager
+  expTextPrefab: {fileID: 505559714504709963, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+  logContainer: {fileID: 76762097}
+  fadeDuration: 1.5
+  moveSpeed: 60
+--- !u!4 &250327524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250327522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 807.31714, y: 475.66397, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &256751856
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,7 +6276,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -6214,7 +6303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 1170964449}
   respawnTime: 15
@@ -6843,7 +6932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -466, y: 326}
+  m_AnchoredPosition: {x: 443, y: -165}
   m_SizeDelta: {x: 500, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &297468309
@@ -8209,7 +8298,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -8249,7 +8338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 1055076768}
   respawnTime: 15
@@ -8880,8 +8969,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.8, y: -21.000002}
-  m_SizeDelta: {x: 17, y: 13}
+  m_AnchoredPosition: {x: 270, y: -180}
+  m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415716537
 MonoBehaviour:
@@ -9013,7 +9102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -799, y: 379}
+  m_AnchoredPosition: {x: 105, y: -96}
   m_SizeDelta: {x: 160, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &416157687
@@ -9446,7 +9535,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &448270032
 GameObject:
@@ -9982,8 +10071,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 22.4}
-  m_SizeDelta: {x: 80, y: 20}
+  m_AnchoredPosition: {x: 0, y: 159}
+  m_SizeDelta: {x: 800, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470527961
 MonoBehaviour:
@@ -10032,8 +10121,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 110
+  m_fontSizeBase: 110
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11766,7 +11855,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -11806,7 +11895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 572492609}
   respawnTime: 15
@@ -27988,7 +28077,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -28028,7 +28117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 657216583}
   respawnTime: 15
@@ -28703,7 +28792,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -28730,7 +28819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 1324710755}
   respawnTime: 15
@@ -29109,7 +29198,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -29136,7 +29225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 1672476271}
   respawnTime: 15
@@ -29993,7 +30082,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -30020,7 +30109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 357944890}
   respawnTime: 15
@@ -30551,7 +30640,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -30578,7 +30667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 2080241867}
   respawnTime: 15
@@ -31135,7 +31224,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -31162,7 +31251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 1813002793}
   respawnTime: 15
@@ -33248,7 +33337,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -33288,7 +33377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 407072558}
   respawnTime: 15
@@ -33586,7 +33675,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -33613,7 +33702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1714245698}
   respawnTime: 15
@@ -34348,7 +34437,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -34375,7 +34464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 792547603}
   respawnTime: 15
@@ -34790,7 +34879,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -34817,7 +34906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 325181094}
   respawnTime: 15
@@ -35638,7 +35727,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -35678,7 +35767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 1047431343}
   respawnTime: 15
@@ -36011,8 +36100,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.5, y: -21.000002}
-  m_SizeDelta: {x: 17, y: 13}
+  m_AnchoredPosition: {x: -270, y: -180}
+  m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903709746
 MonoBehaviour:
@@ -37027,7 +37116,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -37054,7 +37143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 2099612202}
   respawnTime: 15
@@ -37563,7 +37652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 243858994}
   respawnTime: 15
@@ -37742,7 +37831,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -38225,7 +38314,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -38265,7 +38354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 58386817}
   respawnTime: 15
@@ -38631,7 +38720,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -38671,7 +38760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 303054314}
   respawnTime: 15
@@ -39562,7 +39651,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -39589,7 +39678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 499373975}
   respawnTime: 15
@@ -40521,7 +40610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 2142410821}
   respawnTime: 15
@@ -40700,7 +40789,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -42149,7 +42238,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -42189,7 +42278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 484987586}
   respawnTime: 15
@@ -43722,7 +43811,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 12, y: 10}
+  m_SizeDelta: {x: 180, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182620035
 MonoBehaviour:
@@ -43771,8 +43860,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -44099,7 +44188,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -44126,7 +44215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 1980949824}
   respawnTime: 15
@@ -45371,7 +45460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 894928972}
   respawnTime: 15
@@ -45550,7 +45639,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -45947,7 +46036,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -45974,7 +46063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 260284658}
   respawnTime: 15
@@ -46755,7 +46844,7 @@ RectTransform:
   m_GameObject: {fileID: 1328998275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 470527960}
@@ -46763,10 +46852,10 @@ RectTransform:
   - {fileID: 415716536}
   m_Father: {fileID: 442390655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1300, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328998277
 MonoBehaviour:
@@ -47246,7 +47335,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -47286,7 +47375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 925348710}
   respawnTime: 15
@@ -47696,7 +47785,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -47723,7 +47812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 132348733}
   respawnTime: 15
@@ -48418,7 +48507,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -48458,7 +48547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 1135038773}
   respawnTime: 15
@@ -48772,7 +48861,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -48799,7 +48888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1229305326}
   respawnTime: 15
@@ -50157,7 +50246,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 12, y: 10}
+  m_SizeDelta: {x: 180, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1517228328
 MonoBehaviour:
@@ -50206,8 +50295,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50891,7 +50980,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -50918,7 +51007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1518984052}
   respawnTime: 15
@@ -51555,7 +51644,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -51595,7 +51684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 930170055}
   respawnTime: 15
@@ -51818,7 +51907,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -51845,7 +51934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1071521962}
   respawnTime: 15
@@ -52704,7 +52793,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -52731,7 +52820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 286587529}
   respawnTime: 15
@@ -53882,6 +53971,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 76762097}
   - {fileID: 442390655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54484,7 +54574,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -54511,7 +54601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 865502206}
   respawnTime: 15
@@ -55270,7 +55360,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -55297,7 +55387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1179877094}
   respawnTime: 15
@@ -56637,7 +56727,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -56664,7 +56754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 1193437839}
   respawnTime: 15
@@ -58083,7 +58173,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -58110,7 +58200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 180
   hpFill: {fileID: 1387544196}
   respawnTime: 15
@@ -59020,7 +59110,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -59047,7 +59137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 60
   hpFill: {fileID: 2010538595}
   respawnTime: 15
@@ -60793,7 +60883,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -60820,7 +60910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 1599014635}
   respawnTime: 15
@@ -62721,7 +62811,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -62761,7 +62851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 700
   hpFill: {fileID: 766879938}
   respawnTime: 15
@@ -63219,7 +63309,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -63246,7 +63336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007483b3eac522b449dcc26b9939369f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterHealth
-  knockbackPower: 5
+  knockbackPower: 500
   maxHp: 350
   hpFill: {fileID: 1795896427}
   respawnTime: 15
@@ -63810,6 +63900,119 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b74c6a28b766504398431f2162cc368, type: 3}
+--- !u!1001 &1601747872667770729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 76762097}
+    m_Modifications:
+    - target: {fileID: 505559714504709963, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_Name
+      value: ExpLog_Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 505559714504709963, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158190300319703414, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158190300319703414, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158190300319703414, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781032097148589230, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c1ea200956479141b5f2897636cf7c1, type: 3}
 --- !u!1001 &7005096361567636217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63923,6 +64126,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1162612567}
     - target: {fileID: 4624436965584750992, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
+      propertyPath: invincibleTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624436965584750992, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: knockbackPower
       value: 10
       objectReference: {fileID: 0}
@@ -64011,6 +64218,7 @@ SceneRoots:
   - {fileID: 105565408}
   - {fileID: 748957576}
   - {fileID: 594451549}
+  - {fileID: 250327524}
   - {fileID: 2002694153}
   - {fileID: 1674888289}
   - {fileID: 1533589343}
