@@ -125,12 +125,12 @@ TextureImporter:
       name: golem1_Die-Photoroom_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 139
-        height: 134
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 1
+        width: 137
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: golem1_Die-Photoroom_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 154
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 147
+        y: 1
+        width: 152
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,37 +166,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: golem1_Die-Photoroom_2
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 94
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 341ed9649126c5cd0800000000000000
-      internalID: -2568069826809568957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: golem1_Die-Photoroom_3
       rect:
         serializedVersion: 2
-        x: 305
-        y: 1
-        width: 161
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 306
+        y: 2
+        width: 158
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 20ab60c507bb9c647bc175d59c7d29b4
     internalID: 0
     vertices: []
     indices: 
@@ -221,7 +199,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       golem1_Die-Photoroom_0: -3116264154168943009
       golem1_Die-Photoroom_1: 884878528267446269
