@@ -35,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
         if (stats != null)
         {
             hpFill.fillAmount = Mathf.Lerp(hpFill.fillAmount, (float)stats.currentHp / stats.maxHp, Time.deltaTime * 5f);
+            UpdateHpText();
         }
     }
     public void TakeDamage(int damage, Vector2 hitDirection)
