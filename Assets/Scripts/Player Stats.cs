@@ -70,6 +70,7 @@ public class PlayerStats : MonoBehaviour
     public void FullRecovery()
     {
         currentHp = maxHp;
+        currentMp = maxMp;
         potionCount = maxpotionCount;
     }
     private void LevelUP()
@@ -79,10 +80,12 @@ public class PlayerStats : MonoBehaviour
         skillPoints += 1;
         maxExp += 50;
         maxHp += 20;
+        maxMp += 10;
         NormalAttack += 2;
         HardAttack += 4;
         moveSpeed += 0.2f;
         currentHp = maxHp;
+        currentMp = maxMp;
         SkillUI skillUI = FindFirstObjectByType<SkillUI>();
         if (skillUI != null)
         {
@@ -107,6 +110,8 @@ public class PlayerStats : MonoBehaviour
         maxExp = 100;
         maxHp = 100;
         currentHp = maxHp;
+        maxMp = 100;
+        currentMp = maxMp;
         NormalAttack = 6;
         HardAttack = 10;
         potionCount = 10;

@@ -6,6 +6,8 @@ public class SaveData
     public int maxExp;
     public int maxHp;
     public int currentHp;
+    public int maxMp;
+    public int currentMp;
     public int attack1;
     public int attack2;
     public float movespeed;

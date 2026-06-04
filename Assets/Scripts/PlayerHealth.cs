@@ -43,6 +43,7 @@ public class PlayerHealth : MonoBehaviour
             if (mpFill != null)
             {
                 mpFill.fillAmount = Mathf.Lerp(mpFill.fillAmount, (float)stats.currentMp / stats.maxMp, Time.deltaTime * 5f);
+                UpdateMpText();
             }
         }
     }

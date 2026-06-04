@@ -44,6 +44,9 @@ public class SaveManager : MonoBehaviour
         data.maxHp = player.maxHp;
         data.currentHp = player.currentHp;
 
+        data.maxMp = player.maxMp;
+        data.currentMp = player.currentMp;
+
         data.attack1 = player.NormalAttack;
         data.attack2 = player.HardAttack;
 
@@ -84,6 +87,8 @@ public class SaveManager : MonoBehaviour
             loadedData.level = 1;
             loadedData.maxHp = 100;
             loadedData.currentHp = 100;
+            loadedData.maxMp = 100;
+            loadedData.currentMp = 100;
             loadedData.maxExp = 100;
             loadedData.currentExp = 0;
             loadedData.posX = -3.43f;
@@ -109,6 +114,9 @@ public class SaveManager : MonoBehaviour
 
         player.maxHp = loadedData.maxHp;
         player.currentHp = loadedData.currentHp;
+
+        player.maxMp = loadedData.maxMp;
+        player.currentMp = loadedData.currentMp;
 
         player.NormalAttack = loadedData.attack1;
         player.HardAttack = loadedData.attack2;

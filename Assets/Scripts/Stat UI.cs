@@ -7,6 +7,7 @@ public class StatUI : MonoBehaviour
     [SerializeField] private PlayerStats stats;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI hpText;
+    [SerializeField] private TextMeshProUGUI mpText;
     [SerializeField] private TextMeshProUGUI attack1Text;
     [SerializeField] private TextMeshProUGUI attack2Text;
     [SerializeField] private TextMeshProUGUI speedText;
@@ -38,6 +39,7 @@ public class StatUI : MonoBehaviour
     {
         levelText.text = "Lv." + stats.level;
         hpText.text = "HP : " + stats.currentHp + " / " + stats.maxHp;
+        mpText.text = "MP : " + stats.currentMp + " / " + stats.maxMp;
         attack1Text.text = "N.ATK : " + stats.NormalAttack;
         attack2Text.text = "H.ATK : " + stats.HardAttack;
         speedText.text = "SPD : " + stats.moveSpeed.ToString("F1");
