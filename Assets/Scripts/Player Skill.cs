@@ -7,6 +7,8 @@ public class PlayerSkill : MonoBehaviour
 {
     [SerializeField] private GameObject skillPrefab;
     [SerializeField] private Transform firePoint;
+    [SerializeField] private int manaCost = 15;
+
     private Player player;
     private PlayerStats stats;
     private PlayerHealth health;
@@ -35,15 +37,18 @@ public class PlayerSkill : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            _isright = player.Get_isFacingRight();
-            GameObject Fireball = Instantiate(skillPrefab, firePoint.position, firePoint.rotation);
-
-            GetComponent<PlayerAudio>().PlaySkillAttack();
-
-            SkillFireball fireballComponent = Fireball.GetComponent<SkillFireball>();
-            if (fireballComponent != null)
+            if (health.UseMana(manaCost))
             {
-                fireballComponent.InitSkill(_isright, firePoint.position, stats);
+                _isright = player.Get_isFacingRight();
+                GameObject Fireball = Instantiate(skillPrefab, firePoint.position, firePoint.rotation);
+
+                GetComponent<PlayerAudio>().PlaySkillAttack();
+
+                SkillFireball fireballComponent = Fireball.GetComponent<SkillFireball>();
+                if (fireballComponent != null)
+                {
+                    fireballComponent.InitSkill(_isright, firePoint.position, stats);
+                }
             }
         }
     }

@@ -5,8 +5,10 @@ public class PlayerStats : MonoBehaviour
     public int level = 1;
     public int currentExp = 0;
     public int currentHp;
+    public int currentMp;
     public int maxExp = 100;
     public int maxHp = 100;
+    public int maxMp = 100;
     public int NormalAttack = 6;
     public int HardAttack = 10;
     public int potionCount = 10;

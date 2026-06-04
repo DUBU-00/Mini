@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private Image hpFill;
     [SerializeField] private TextMeshProUGUI hpText;
+    [SerializeField] private Image mpFill;
+    [SerializeField] private TextMeshProUGUI mpText;
 
     [SerializeField] private float knockbackPower = 5f;
     [SerializeField] private float invincibleTime = 1f;
@@ -28,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
         anim = GetComponent<Animator>();
 
         UpdateHpText();
+        UpdateMpText();
     }
 
     private void Update()
@@ -36,6 +39,24 @@ public class PlayerHealth : MonoBehaviour
         {
             hpFill.fillAmount = Mathf.Lerp(hpFill.fillAmount, (float)stats.currentHp / stats.maxHp, Time.deltaTime * 5f);
             UpdateHpText();
+            
+            if (mpFill != null)
+            {
+                mpFill.fillAmount = Mathf.Lerp(mpFill.fillAmount, (float)stats.currentMp / stats.maxMp, Time.deltaTime * 5f);
+            }
+        }
+    }
+    public bool UseMana(int amount)
+    {
+        if (stats.currentMp >= amount)
+        {
+            stats.currentMp -= amount;
+            UpdateMpText();
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
     public void TakeDamage(int damage, Vector2 hitDirection)
@@ -108,7 +129,13 @@ public class PlayerHealth : MonoBehaviour
             hpText.text = stats.currentHp.ToString() + " / " + stats.maxHp.ToString();
         }
     }
-
+    private void UpdateMpText()
+    {
+        if (mpText != null && stats != null)
+        {
+            mpText.text = stats.currentMp.ToString() + " / " + stats.maxMp.ToString();
+        }
+    }
     private void Die()
     {
         isDie = true;
@@ -132,9 +159,11 @@ public class PlayerHealth : MonoBehaviour
         if (stats != null)
         {
             stats.currentHp = stats.maxHp;
+            stats.currentMp = stats.maxMp;
             stats.potionCount = stats.maxpotionCount;
         }
         UpdateHpText();
+        UpdateMpText();
 
         rb.bodyType = RigidbodyType2D.Dynamic;
 
