@@ -47,6 +47,10 @@ public class PlayerStats : MonoBehaviour
         {
             LevelUP();
         }
+        if (LogManager.Instance != null)
+        {
+            LogManager.Instance.ShowExpLog(amount);
+        }
     }
     public void Heal()
     {
