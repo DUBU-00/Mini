@@ -66,7 +66,7 @@ public class LogManager : MonoBehaviour
             rectTransform.anchorMax = new Vector2(1, 0);
             rectTransform.pivot = new Vector2(1, 0);
 
-            rectTransform.anchoredPosition = new Vector2(-50, 100 + startYOffset);
+            rectTransform.anchoredPosition = new Vector2(-30, 100 + startYOffset);
             float timer = 0f;
             while (timer < fadeDuration)
             {
