@@ -18,6 +18,10 @@ public class BossAI : MonoBehaviour
     [SerializeField] private int expReward = 500;
     [SerializeField] private AudioClip hitSfx;
     [SerializeField] private AudioClip dieSfx;
+    [SerializeField] private AudioClip attackSfx;
+    [SerializeField] private AudioClip attack2Sfx;
+    [SerializeField] private AudioClip skillSfx;
+    [SerializeField] private AudioClip gapSfx;
     [SerializeField] private float hitCooldown = 0.4f;
 
     [Header("컴포넌트 및 콜라이더 제어")]
@@ -198,12 +202,15 @@ public class BossAI : MonoBehaviour
                 string randomAttack = "";
                 float currentDelay = 0f;
                 float currentDuration = 0f;
+                AudioClip selectedAttackSfx = null;
+
                 if (Random.Range(0, 2) == 0)
                 {
                     randomAttack = animAttack;
                     currentAttackDamage = damageAttack;
                     currentDelay = delayAttack;
                     currentDuration = durationAttack;
+                    selectedAttackSfx = attackSfx;
                 }
                 else
                 {
@@ -211,6 +218,7 @@ public class BossAI : MonoBehaviour
                     currentAttackDamage = damageAttack2;
                     currentDelay = delayAttack2;
                     currentDuration = durationAttack2;
+                    selectedAttackSfx = attack2Sfx;
                 }
 
                 StartCoroutine(EnableAttackColliderRoutine(currentDelay / attackSpeedMultiplier, currentDuration / attackSpeedMultiplier));
@@ -220,6 +228,9 @@ public class BossAI : MonoBehaviour
                 {
                     attackTrack.TimeScale = attackSpeedMultiplier;
                     attackTrack.Complete += OnActionComplete;
+
+                    float animLength = attackTrack.Animation.Duration / attackSpeedMultiplier;
+                    StartCoroutine(PlayDelayedSound(selectedAttackSfx, animLength / 2f));
                 }
                 else isActionPlaying = false;
                 break;
@@ -236,6 +247,11 @@ public class BossAI : MonoBehaviour
                     currentAttackDamage = damageSkill;
                     currentDelay = delaySkill;
                     currentDuration = durationSkill;
+                    
+                    if (audioSource !=null && skillSfx != null)
+                    {
+                        audioSource.PlayOneShot(skillSfx);
+                    }
                 }
                 else
                 {
@@ -243,6 +259,11 @@ public class BossAI : MonoBehaviour
                     currentAttackDamage = damageGap;
                     currentDelay = delayGap;
                     currentDuration = durationGap;
+
+                    if (audioSource != null && gapSfx != null)
+                    {
+                        audioSource.PlayOneShot(gapSfx);
+                    }
                 }
 
                     StartCoroutine(EnableAttackColliderRoutine(currentSkillDelay / attackSpeedMultiplier, currentSkillDuration / attackSpeedMultiplier));
@@ -255,6 +276,15 @@ public class BossAI : MonoBehaviour
                 }
                 else isActionPlaying = false;
                 break;
+        }
+    }
+
+    private IEnumerator PlayDelayedSound(AudioClip clip, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
         }
     }
 
