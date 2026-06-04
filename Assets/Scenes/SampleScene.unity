@@ -64079,7 +64079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2342115601989131497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: moveSpeed
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2342115601989131497, guid: ab630a8d547dc0841a78a5032da040ea, type: 3}
       propertyPath: HardAttack

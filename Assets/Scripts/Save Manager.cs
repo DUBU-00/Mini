@@ -90,7 +90,7 @@ public class SaveManager : MonoBehaviour
             loadedData.posY = -2.77f;
             loadedData.attack1 = 6;
             loadedData.attack2 = 10;
-            loadedData.movespeed = 7f;
+            loadedData.movespeed = 5f;
             loadedData.skillPoints = 0;
             loadedData.fireballLevel = 1;
             loadedData.fireballDamage = 15;

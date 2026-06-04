@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     public int potionCount = 10;
     public int maxpotionCount = 10;
     public int healAmount = 50;
-    public float moveSpeed = 7f;
+    public float moveSpeed = 5f;
     public int skillPoints = 0;
     public int fireballLevel = 1;
     public const int MAX_FIREBALL_LEVEL = 20;
@@ -110,7 +110,7 @@ public class PlayerStats : MonoBehaviour
         potionCount = 10;
         maxpotionCount = 10;
         healAmount = 50;
-        moveSpeed = 7f;
+        moveSpeed = 5f;
         skillPoints = 0;
         fireballLevel = 1;
     }
