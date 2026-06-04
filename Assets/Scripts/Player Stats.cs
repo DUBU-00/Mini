@@ -11,9 +11,12 @@ public class PlayerStats : MonoBehaviour
     public int maxMp = 100;
     public int NormalAttack = 6;
     public int HardAttack = 10;
-    public int potionCount = 10;
-    public int maxpotionCount = 10;
-    public int healAmount = 50;
+    public int hpPotionCount = 10;
+    public int maxHpPotionCount = 10;
+    public int hpHealAmount = 50;
+    public int mpPotionCount = 10;
+    public int maxMpPotionCount = 10;
+    public int mpHealAmount = 20;
     public float moveSpeed = 5f;
     public int skillPoints = 0;
     public int fireballLevel = 1;
@@ -39,7 +42,11 @@ public class PlayerStats : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Heal();
+            HealHp();
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            HealMp();
         }
     }
     public void AddExp(int amount)
@@ -54,24 +61,38 @@ public class PlayerStats : MonoBehaviour
             LogManager.Instance.ShowExpLog(amount);
         }
     }
-    public void Heal()
+    public void HealHp()
     {
-        if (potionCount <= 0)
+        if (hpPotionCount <= 0)
             return;
         if (currentHp >= maxHp)
             return;
-        potionCount--;
-        currentHp += healAmount;
+        hpPotionCount--;
+        currentHp += hpHealAmount;
         if(currentHp > maxHp)
         {
             currentHp = maxHp;
+        }
+    }
+    public void HealMp()
+    {
+        if (mpPotionCount <= 0)
+            return;
+        if (currentMp >= maxMp)
+            return;
+        mpPotionCount--;
+        currentMp += mpHealAmount;
+        if (currentMp > maxMp)
+        {
+            currentMp = maxMp;
         }
     }
     public void FullRecovery()
     {
         currentHp = maxHp;
         currentMp = maxMp;
-        potionCount = maxpotionCount;
+        hpPotionCount = maxHpPotionCount;
+        mpPotionCount = maxMpPotionCount;
     }
     private void LevelUP()
     {
@@ -114,9 +135,12 @@ public class PlayerStats : MonoBehaviour
         currentMp = maxMp;
         NormalAttack = 6;
         HardAttack = 10;
-        potionCount = 10;
-        maxpotionCount = 10;
-        healAmount = 50;
+        hpPotionCount = 10;
+        maxHpPotionCount = 10;
+        hpHealAmount = 50;
+        mpPotionCount = 10;
+        maxMpPotionCount = 10;
+        mpHealAmount = 20;
         moveSpeed = 5f;
         skillPoints = 0;
         fireballLevel = 1;

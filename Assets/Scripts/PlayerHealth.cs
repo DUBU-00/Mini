@@ -161,7 +161,8 @@ public class PlayerHealth : MonoBehaviour
         {
             stats.currentHp = stats.maxHp;
             stats.currentMp = stats.maxMp;
-            stats.potionCount = stats.maxpotionCount;
+            stats.hpPotionCount = stats.maxHpPotionCount;
+            stats.mpPotionCount = stats.maxMpPotionCount;
         }
         UpdateHpText();
         UpdateMpText();
