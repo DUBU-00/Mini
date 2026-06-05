@@ -25,8 +25,9 @@ public class SkillHoverTrigger : MonoBehaviour, IPointerEnterHandler, IPointerEx
         int currentLvl = playerStats.fireballLevel;
         int maxLvl = PlayerStats.MAX_FIREBALL_LEVEL;
 
-        string description = "전방으로 파이어볼을 발사한다. 레벨이 증가 할수록 기본 공격력에 비례해 파이어볼 데미지도 증가한다.\n" +
-                             "<color=#FFFF55>(마스터 레벨 달성 시 기본 공격력의 최대 150% 피해)</color>";
+        string description = "전방으로 파이어볼을 발사한다. 플레이어 레벨이 증가 할수록 기본 공격력에 비례해 파이어볼 데미지도 증가한다.\n" +
+                             "<color=#FFFF55>(마스터 레벨 달성 시 기본\n" +
+                             "공격력의 최대 150% 피해)</color>";
         string effects = "";
 
         if (currentLvl > 0)

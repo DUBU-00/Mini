@@ -11,15 +11,7 @@ public class SkillUI : MonoBehaviour
 
     void Start()
     {
-        GameObject player = GameObject.FindWithTag("Player");
-        if (player != null )
-        {
-            stats = player.GetComponent<PlayerStats>();
-        }
-        else
-        {
-            stats = FindFirstObjectByType<PlayerStats>();
-        }
+        EnsurePlayerStatsConnected();
     }
     void OnEnable()
     {
@@ -30,15 +22,7 @@ public class SkillUI : MonoBehaviour
     {
         if (stats == null)
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
-            {
-                stats = player.GetComponent<PlayerStats>();
-            }
-            else
-            {
-                stats = FindFirstObjectByType<PlayerStats>();
-            }
+            stats = FindFirstObjectByType<PlayerStats>();
         }
     }
     public void UpdateSkillUI()
