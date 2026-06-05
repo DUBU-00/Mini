@@ -30,6 +30,7 @@ public class SkillTooltip : MonoBehaviour
     public void showTooltip(Sprite icon, string sName, int currentLvl, int maxLvl, string description, string effects)
     {
         gameObject.SetActive(true);
+        transform.SetAsLastSibling();
         if (skillIcon != null && icon != null) skillIcon.sprite = icon;
 
         skillNameText.text = sName;
